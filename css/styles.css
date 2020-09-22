@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  text-align: center;
+  background-repeat: no-repeat; 
+}
+
+
+
+
+.header {
+  margin: 1em auto; }
+  .header__texts {
+    margin: 1em auto; }
+  .header__h1 {
+    color: pink;
+    margin: 1em auto;
+  font-size: 3em; }
+  .header__p {
+    color: grey;
+    margin: 2em 1.5em;
+    min-width: 5em; 
+    width: 70%;
+  text-align: left;}
+  .header__container {
+    width: 100%;
+    max-width: 95em; }
+
+  .header__icon {
+    color: orange; }
+
+    .header__card1 {
+      background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(247, 236, 238, 0.849));
+      margin: 2em 5em;
+      min-width: 10em;
+      border-radius: 10%;
+      height: 3em;
+      width: 60%;
+    }
+    .header__card2 {
+      background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(241, 220, 225, 0.849));
+      margin: 2em 5em;
+      min-width: 10em;
+      border-radius: 10%;
+      height: 3em;
+      width: 60%;
+    }
+    .header__card3 {
+      background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(238, 217, 222, 0.849));
+      margin: 2em 5em;
+      min-width: 10em;
+      border-radius: 10%;
+      height: 3em;
+      width: 60%;
+    }
+
+.main {
+  margin: 1em 1em;
+  justify-items: center;
+  text-align: center; 
+max-width: 100%;}
+  .main__container {
+    width: 80%;
+    max-width: 95em;
+    display: grid; }
+  .main__card1{
+    background-color: rgb(61, 5, 61);
+    margin: 2em auto;
+    height: 13em;
+    border-radius: 5%;
+    display: flex;
+    width: 80vw;
+    min-width: 19em; }
+    .main__card2{
+      background-color: rgb(61, 5, 61);
+      margin: 2em auto;
+      height: 13em;
+      border-radius: 5%;
+      display: flex;
+      width: 80vw;
+      min-width: 19em; }
+      .main__card3{
+        background-color: rgb(61, 5, 61);
+        margin: 2em auto;
+        height: 13em;
+        border-radius: 5%;
+        display: flex;
+        width: 80vw;
+        min-width: 19em; }
+  .main__logo {
+    border-radius: 50%;
+    height: 40%;
+    margin: 1em 0em;
+    padding: 0em 1.9em; }
+  .main__name-texts {
+    width: 100%;
+    margin: 1em auto;
+    text-align: left;
+    min-width: 10em; }
+
+    .main__h4 {
+      color: white;
+    }
+
+    .main__h6 {
+      color: pink;
+    }
+  .main__p {
+    margin: 1.2em auto;
+    text-align: left;
+  color: white; }
+
+@media screen and (min-width:1024px) {
+  html {
+    padding: 0;
+    margin: 0em;
+    width: 100%;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    max-width: 194em;
+    width: 100%;
+    min-width: 94em;
+  }
+
+
+  .header__container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 94em;
+    width: 100%;
+    margin: 2em;
+    min-width: 9em;
+  }
+
+  .header__h1 {
+    text-align: left;
+  }
+
+
+
+  .header__card {
+    height: 0em;
+    margin: 4em auto;
+    width: 100%;
+    max-width: 93em;
+    
+  }
+
+  .header__card1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(247, 236, 238, 0.849));
+    margin: 2em 6em;
+    width: 50%;
+    border-radius: 10%;
+    height: 3em;
+    max-width: 93em;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .header__stars {
+    padding-right: 1.5em;
+  }
+  .header__card2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(241, 220, 225, 0.849));
+    margin: 2em 15em;
+    width: 26em;
+    border-radius: 10%;
+    height: 3em;
+    width: 50%;
+    max-width: 93em;
+    display: flex;
+    padding: 1rem;
+  }
+  .header__card3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(238, 217, 222, 0.849));
+    margin: 2em 21em;
+    width: 26em;
+    border-radius: 10%;
+    height: 3em;
+    width: 50%;
+    max-width: 93em;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 94em;
+  }
+
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 6em 3em;
+    max-width: 100em;
+    width: 100vw;
+    min-width: 93em;
+  }
+
+
+
+  .main__card1 {
+    margin: 1em 3em;
+    max-width: 94em;
+    height: 17em;    
+    padding: 0;
+    width: 100%;
+    color: white;
+    min-width: 6em;
+  }
+
+  .main__logo {
+    height: 20%;
+  }
+
+  .main__card2 {
+    margin: 3em 5em;
+    max-width: 94em;
+    height: 17em;    
+    width: 100%;
+    color: white;
+    min-width: 6em;
+  }
+
+  .main__card3 {
+    margin: 6em auto;
+    max-width: 96em;
+    height: 17em;    
+    width: 100%;
+    color: white;
+    min-width: 16em;
+  }
+}
+
+
+
