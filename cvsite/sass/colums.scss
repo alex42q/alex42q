@@ -1,0 +1,45 @@
+.col-1-of-3 {
+    width: calc((100% - 2 * 1rem) / 3);
+
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+}
+
+.col-1-of-2 {
+    width: calc((100% - 8rem) / 2);
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: 4rem;
+    }
+}
+
+.col {
+    width: calc((100% - 8rem) / 1);
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+
+.col-1-of-2-sec {
+    width: calc((100% - 6rem) / 2);
+    float: left;
+
+    &:not(:last-child) {
+        padding-right: 2rem;
+    }
+}
+
+
+.col-1-of-2-grid {
+    width: calc((100% - 8rem) / 2);
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}

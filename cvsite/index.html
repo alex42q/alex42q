@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+    maximum-scale=1.0, user-scalable=no" /> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <!--<script src="./js/scroll-animation.js"></script>-->
+    <script src="./js/drop.js"></script>
+    <title>Alexandros Zorbadakis</title>
+</head>
+<body>
+    <div id="header-section">
+        <div class="header">
+            <div class="header__img">
+                <div class="sidebar">
+                    <ul class="sidebar__ul" id="sidebar__ul_links">
+                        <li class="sidebar__li"><a class="sidebar__link" href="#header-section">Home</a></li>
+                        <li class="sidebar__li"><a class="sidebar__link" href="#main-section">About Me</a></li>
+                        <li class="sidebar__li"><a class="sidebar__link" href="#work-expirience">My CV</a></li>
+                        <li class="sidebar__li"><a class="sidebar__link" href="#professional-skills">My Skills</a></li>
+                        <li class="sidebar__li"><a class="sidebar__link" href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+                <i onclick="myFunction(this)" class="header__icon fas fa-bars fa-2x" id="header__icon-h"></i>
+                <div class="mobile__sidebar">
+                    <ul class="mobile_sidebar__ul" id="mobile_sidebar__ul_links">
+                        <li class="mobile_sidebar__li"><a class="mobile_sidebar__link" href="#header-section">Home</a></li>
+                        <li class="mobile_sidebar__li"><a class="mobile_sidebar__link" href="#main-section">About Me</a></li>
+                        <li class="mobile_sidebar__li"><a class="mobile_sidebar__link" href="#work-expirience">My CV</a></li>
+                        <li class="mobile_sidebar__li"><a class="mobile_sidebar__link" href="#professional-skills">My Skills</a></li>
+                        <li class="mobile_sidebar__li"><a class="mobile_sidebar__link" href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+            <div class="header__logo-img"><img class="header__logo" src="./images/cv-picture.jpg" alt=""></div>
+          <div class="header__texts">
+          <h1 class="header__h1">Alexandros Zorbadakis</h1>
+          <p class="header__p">Welcome to my site</p>
+          <div class="header__button-position">
+            <button type="header__button" class="header__btn btn btn-outline-success" id="btn">Download my CV</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="main-section">
+    <div class="main">
+        <h1 class="main__traits">Personal Traits</h1>
+        <div class="main__card">
+            <div class="row lax" data-lax-preset="fadeInOut">
+                <div class="col-1-of-2">
+                    <h1 class="main__h1">About me</h1>
+                    <p class="main__p1">Enthusiastic IT Support professional with 6 years of experience seeking to benefit an IT
+                        Department with complex technical knowledge and strong time management skills. Capable
+                        of resolving complex hardware, software and networking issues. Experienced in the
+                        installation and maintenance of workstations, laptops and LANs. Monitoring overall systems
+                        security, familiar with backup policies and installing various network components. Well
+                        grounded in Microsoft Office products and the Office 365 administrator panel. Skilled at
+                        Windows Server Active Directory as well as DNS and DHCP servers. I am able to bridge the
+                        gap between technical and non-technical employees, hard working and able to multi-task
+                        effectively.</p>
+                </div>
+                
+                <div class="col-1-of-2">
+                    <h1 class="main__h2">Basic Information</h1>
+                    <p class="main__p2">AGE: 29</p>
+                    <p class="main__p2">EMAIL: alexander@zorbadakis.com</p>
+                    <p class="main__p2">PHONE: +30 698 72 83 681</p>
+                    <p class="main__p2">ADDRESS: Piraeus</p>
+                    <p class="main__p2">LANGUAGE: Greek (Native), English</p>
+                </div>
+            
+            
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<div id="professional-skills">
+    <div class="skills">
+        <h1 class="skills__h">Professional Skills</h1>
+        <div class="skills__card">
+            <div class="row lax" data-lax-preset="fadeInOut">
+                <div class="col-1-of-2 col-1-of-2-skills">
+                    <p class="skills__p">Servers</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div></div>
+                    <p class="skills__p">Networking</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div></div>
+                    <p class="skills__p">Protocols</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div></div>
+                    <p class="skills__p">MS Applications</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div>
+                    <p class="skills__p">Web Applications</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div></div>
+                </div>
+                <div class="col-1-of-2 col-1-of-2-skills">
+                    <p class="skills__p">HTML</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 94%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">94%</div></div>
+                    <p class="skills__p">CSS</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div></div>
+                    <p class="skills__p">Sass</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55%</div></div>
+                    <p class="skills__p">Javascript</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div></div>
+                    <p class="skills__p">Linux</p>
+                    <div class="progress"><div class="progress-bar bg-success lax" data-lax-preset="blurInOut" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-expirience">
+    <div class="work lax">
+        <h1 class="work__h-ex">Work Experience</h1>
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">January 2020 – Up to date</h3>
+                            <p class="work__p">Diligent Holding S.A:</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Network and System Administrator</h3>
+                                <p class="work__p-2">With the role of System and Network
+                                    administrator, for a group of companies (President hotel, Astor hotel and Diligent), responsible
+                                    for up to 200 users and 15 vessels. Implementation of new projects, such us the installation of 
+                                    new wlan for the hotels, cyber security, IP cameras, maintaining up to 20 windows and ubuntu
+                                    servers (3 domains), configuration of new switches (dell and HP) with multi vlans, VoIP PBX call
+                                    center and many duties including maintenance and upgrades</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">June 2019 – January 2020</h3>
+                            <p class="work__p">Estia Developments:</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">IT Administrator</h3>
+                                <p class="work__p-2">Work as System Administrator focusing on 150 endpoint devices, office 365 and SharePoint online, Dropbox for Business, Ethernet switches and wireless networking.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">May 2018 – June 2019</h3>
+                            <p class="work__p">Technet TILTD</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">IT Support Engineer</h3>
+                                <p class="work__p-2">IT Support Engineer installing and maintaining
+                                    networks, servers, endpoints, troubleshooting software and hardware problems on site in
+                                    Greece and abroad.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">April 2016 – May 2018</h3>
+                            <p class="work__p">Medusa Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Junior IT Administrator</h3>
+                                <p class="work__p-2">Junior IT Administrator on site supporting 70
+                                    endpoint users call center support (Freepbx) and VOIP phones installing and
+                                    troubleshooting</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">March 2014 – July 2015 </h3>
+                            <p class="work__p">AirFasttickets</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Junior IT Support</h3>
+                                <p class="work__p-2">Junior IT Support Engineer hands on installing
+                                    printers and troubleshooting.
+                                    </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <h1 class="work__education">Education</h1>
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">MARCH 2016 - PRESENT</h3>
+                            <p class="work__p">CREATIVEM</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Front End Developer</h3>
+                                <p class="work__p-2">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">MARCH 2016 - PRESENT</h3>
+                            <p class="work__p">CREATIVEM</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Front End Developer</h3>
+                                <p class="work__p-2">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">MARCH 2016 - PRESENT</h3>
+                            <p class="work__p">CREATIVEM</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Front End Developer</h3>
+                                <p class="work__p-2">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row lax">
+            <div class="col-1-of-2-sec">
+                <div class="work__card">
+                   <div class="work__container1">
+                    <div class="work__card-body-1">
+                        <div class="card-body">
+                            <h3 class="work__h3">MARCH 2016 - PRESENT</h3>
+                            <p class="work__p">CREATIVEM</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2-sec"> 
+                    <div class="work__container2">
+                        <div class="work__card-body-2">
+                            <div class="card-body">
+                                <div class="work__texts">
+                                <h3 class="work__h3-2">Front End Developer</h3>
+                                <p class="work__p-2">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portofolio-section">
+    <div class="portofolio">
+        <h1 class="portofolio__h">Portofolio</h1>
+        <div class="portofolio__imgs">
+            <div class="row">
+                <div class="col-1-of-2-grid">
+                    <img class="portofolio__img" src="./images/blake-connally-B3l0g6HLxr8-unsplash.jpg">
+                    <img class="portofolio__img" src="./images/lukas-blazek-GnvurwJsKaY-unsplash.jpg">
+                </div>
+                <div class="col-1-of-2-grid">
+                    <img class="portofolio__img" src="./images/scott-graham-5fNmWej4tAA-unsplash.jpg">
+                    <img class="portofolio__img" src="./images/tyler-franta-iusJ25iYu1c-unsplash.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="references-section">
+    <div class="references">
+        <h1 class="references__h">References</h1>
+        <div class="row lax" data-lax-preset="fadeInOut">
+            <div class="col">
+                <div class="references__container">
+                    <div class="references__card">
+                        <div class="card-body">
+                            <h2 class="references__h2">Estia-Developments</h2>
+                            <p class="references__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, aperiam excepturi. Ipsum cupiditate beatae, consectetur totam consequatur quo deserunt ea quas blanditiis deleniti iure nesciunt sequi provident recusandae reprehenderit sit?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-section">
+    <div class="footer">
+        <div class="footer__icons lax" data-lax-preset="fadeInOut">
+            <i class="footer__icon footer__fb fab fa-facebook-square fa-3x"></i>
+            <i class="footer__icon footer__insta fab fa-instagram fa-3x"></i>
+            <i class="footer__icon footer__mail fas fa-envelope-open-text fa-3x"></i>
+            <i class="footer__icon footer__linked fab fa-linkedin fa-3x"></i>
+        </div>
+        <div class="footer__text lax" data-lax-preset="fadeInOut">
+            <h2 class="footer__h2">Alexandros Zorbadakis</h2>
+            <p class="footer__p">© Creative Alexandros Zorbadakis CV. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+
+<script src="./js/scroll.js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>
