@@ -4,37 +4,50 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 .header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/dream-pulse-header.jpg);
     height: 100vh;
     background-size: cover;
     object-fit: cover;
     z-index: -1;
+    background-attachment: fixed;
 
     &__nav{
         z-index: 100;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
-        width: 30%;
+        width: 26%;
         height: 100vh;
         position: fixed;
     }
 
+    &__active{
+        background-color: white;
+        width: 10%;
+        color: white;
+    }
+
     &__nav-text{
         border: 1px solid white;
-        max-width: 70%;
-        height: 20%;
+        width: 60%;
+        height: 18%;
         margin-left: 5rem;
         margin-top: 2rem;
     }
 
     &__nav-h1{
         line-height: 80px;
-        margin-top: 60px;
-        margin-left: 2.1rem;
+        margin-top: 15px;
+        margin-left: 0.5rem;
         color: white;
         border: 1px solid white;
-        height: 90%;
-        max-width: 15rem;
+        height: 100%;
+        width: 16rem;
         font-size: 2rem;
         text-align: center;
     }
@@ -66,7 +79,8 @@
 
     &__nav-icon{
         color: white;
-        margin: 1rem 2rem;
+        margin-top:1rem;
+        margin-left: 2.5rem;
     }
 
     &__text-container{
@@ -112,7 +126,7 @@
 
     &__container{
         margin-left: 27.9rem;
-
+        flex-wrap: wrap;
         display: flex;
         margin-top: 8rem;
         justify-content: flex-end;
@@ -124,9 +138,11 @@
         display: flex;
         flex-direction: row;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     &__column1{
+        flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -136,6 +152,7 @@
     }
 
     &__column2{
+        flex-wrap: wrap;
         display:flex;
         flex-direction: column;
         text-align: left;
@@ -167,8 +184,11 @@
 }
 
 .ourwork {
-    height: 50vh;
+    height: 70vh;
     margin-top: 25rem;
+    border: 1px solid rgb(194, 191, 191);
+    margin-left: 27.9rem;
+    margin-right: 1rem;
 
     &__h1 {
         text-align: center;
@@ -176,25 +196,29 @@
     }
 
     &__container{
-        margin-left: 27.9rem;
         display: flex;
-        margin-top: 8rem;
+        margin-top: 0.5rem;
         justify-content: center;
-        height: 100%;
+        margin-left: 0.5rem;
+        height: 97%;
         flex-direction: column;
-
+        border: 1px solid rgb(194, 191, 191);
+        width: 98%;
+        flex-wrap: wrap;
     }
 
     &__row{
         display: flex;
         flex-direction: row;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     &__column{
         display: flex;
         flex-direction: column;
         margin: 1rem 1.5rem;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -210,5 +234,113 @@
     }
 }
 
+.clients{
+    height: 70vh;
+    margin-top:5rem;
+    margin-left: 27.9rem;
+    margin-right: 1rem;
+
+    &__container-text{
+        margin-left: 1rem;
+        
+    }
+
+    &__h1{
+        margin-bottom: 3rem;
+    }
+
+    &__container-logos{
+        margin-top: 4.5rem;
+        justify-content: center;
+        height: 90%;
+        width: 98%;
+       
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        margin-top:1rem;
+        
+    }
+
+
+    &__border{
+        border: 1px solid rgb(194, 191, 191);
+        width: 25%;
+        margin-left:1rem;
+    }
+
+    &__logo{
+        margin: 2rem 1rem;
+        
+
+        line-height: 50%;
+    }
+}
+
+.talk{
+    height: 70vh;
+    margin-top:5rem;
+    margin-left: 27.9rem;
+    margin-right: 1rem;
+
+    &__row{
+        display:flex;
+        flex-direction: row;
+        
+    }
+
+    &__column1 {
+        display:flex;
+        flex-direction: column;
+        flex: 3;
+        margin-left:1rem;
+        
+    }
+
+    &__texts{
+        border: 1px solid rgb(194, 191, 191);
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin: 2rem 1rem;
+    }
+
+    &__h1{
+        font-size:1.2rem;
+    }
+
+    &__border{
+        border: 1px solid rgb(194, 191, 191);
+        width: 97%;
+        height: 96%;
+        margin-top:5px;
+    }
+
+    &__column2 {
+        display:flex;
+        flex-direction: column;
+        flex: 2;
+        margin-left: 3rem;
+        flex-wrap: wrap;
+    }
+
+    &__input{
+        border-style: none;
+        border-bottom: 1px solid grey;
+    }
+
+    &__textarea{
+        border-style:none;
+        border-bottom: 1px solid grey;
+    }
+
+    &__submit{
+        border-style: none;
+        border-bottom: 1px solid grey;
+        float: center;
+    }
+}
 
 

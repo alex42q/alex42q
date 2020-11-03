@@ -3,32 +3,40 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/dream-pulse-header.jpg);
   height: 100vh;
   background-size: cover;
   object-fit: cover;
-  z-index: -1; }
+  z-index: -1;
+  background-attachment: fixed; }
   .header__nav {
     z-index: 100;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
-    width: 30%;
+    width: 26%;
     height: 100vh;
     position: fixed; }
+  .header__active {
+    background-color: white;
+    width: 10%;
+    color: white; }
   .header__nav-text {
     border: 1px solid white;
-    max-width: 70%;
-    height: 20%;
+    width: 60%;
+    height: 18%;
     margin-left: 5rem;
     margin-top: 2rem; }
   .header__nav-h1 {
     line-height: 80px;
-    margin-top: 60px;
-    margin-left: 2.1rem;
+    margin-top: 15px;
+    margin-left: 0.5rem;
     color: white;
     border: 1px solid white;
-    height: 90%;
-    max-width: 15rem;
+    height: 100%;
+    width: 16rem;
     font-size: 2rem;
     text-align: center; }
   .header__nav-nav {
@@ -48,7 +56,8 @@
     font-size: 1.3rem; }
   .header__nav-icon {
     color: white;
-    margin: 1rem 2rem; }
+    margin-top: 1rem;
+    margin-left: 2.5rem; }
   .header__text-container {
     background: linear-gradient(rgba(241, 240, 240, 0.5), rgba(247, 247, 247, 0.5));
     width: 35%;
@@ -79,6 +88,7 @@
   height: 50vh; }
   .main__container {
     margin-left: 27.9rem;
+    flex-wrap: wrap;
     display: flex;
     margin-top: 8rem;
     justify-content: flex-end;
@@ -87,8 +97,10 @@
   .main__row {
     display: flex;
     flex-direction: row;
-    width: 100%; }
+    width: 100%;
+    flex-wrap: wrap; }
   .main__column1 {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -96,6 +108,7 @@
     flex: 1;
     margin: auto 3rem; }
   .main__column2 {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -116,26 +129,34 @@
     color: blue; }
 
 .ourwork {
-  height: 50vh;
-  margin-top: 25rem; }
+  height: 70vh;
+  margin-top: 25rem;
+  border: 1px solid #c2bfbf;
+  margin-left: 27.9rem;
+  margin-right: 1rem; }
   .ourwork__h1 {
     text-align: center;
     justify-content: center; }
   .ourwork__container {
-    margin-left: 27.9rem;
     display: flex;
-    margin-top: 8rem;
+    margin-top: 0.5rem;
     justify-content: center;
-    height: 100%;
-    flex-direction: column; }
+    margin-left: 0.5rem;
+    height: 97%;
+    flex-direction: column;
+    border: 1px solid #c2bfbf;
+    width: 98%;
+    flex-wrap: wrap; }
   .ourwork__row {
     display: flex;
     flex-direction: row;
-    width: 100%; }
+    width: 100%;
+    flex-wrap: wrap; }
   .ourwork__column {
     display: flex;
     flex-direction: column;
     margin: 1rem 1.5rem;
+    flex-wrap: wrap;
     justify-content: center; }
   .ourwork__dot {
     width: 20px;
@@ -146,3 +167,72 @@
     text-align: center;
     justify-content: center;
     margin-left: 5rem; }
+
+.clients {
+  height: 70vh;
+  margin-top: 5rem;
+  margin-left: 27.9rem;
+  margin-right: 1rem; }
+  .clients__container-text {
+    margin-left: 1rem; }
+  .clients__h1 {
+    margin-bottom: 3rem; }
+  .clients__container-logos {
+    margin-top: 4.5rem;
+    justify-content: center;
+    height: 90%;
+    width: 98%; }
+  .clients__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem; }
+  .clients__border {
+    border: 1px solid #c2bfbf;
+    width: 25%;
+    margin-left: 1rem; }
+  .clients__logo {
+    margin: 2rem 1rem;
+    line-height: 50%; }
+
+.talk {
+  height: 70vh;
+  margin-top: 5rem;
+  margin-left: 27.9rem;
+  margin-right: 1rem; }
+  .talk__row {
+    display: flex;
+    flex-direction: row; }
+  .talk__column1 {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 1rem; }
+  .talk__texts {
+    border: 1px solid #c2bfbf;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin: 2rem 1rem; }
+  .talk__h1 {
+    font-size: 1.2rem; }
+  .talk__border {
+    border: 1px solid #c2bfbf;
+    width: 97%;
+    height: 96%;
+    margin-top: 5px; }
+  .talk__column2 {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 3rem;
+    flex-wrap: wrap; }
+  .talk__input {
+    border-style: none;
+    border-bottom: 1px solid grey; }
+  .talk__textarea {
+    border-style: none;
+    border-bottom: 1px solid grey; }
+  .talk__submit {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    float: center; }
