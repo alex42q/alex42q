@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    animation: pages 1s;
+}
+
+.mobile-container{
+    display:none;
+}
+
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
+    animation: pages 1s;
+    animation-duration: 1.3s;
+}
+
+.mobile-sidebar{
+    display: none;
+}
+
+.menu-icon{
+    color: whitesmoke;
+    display: none;
+    visibility: hidden;
+}
+
+.menu-icon-2{
+    color: whitesmoke;
+    display: none;
+    visibility: hidden;
+}
+
+.icon{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icon:hover{
+    color: black;
+    transition: 1s ease;
+ 
+}
+
+/* this is for the intro CSS*/
+.load__container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../images/jan-baborak-_OFP0pA1u3g-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.texts__h1{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: 'Henny Penny', cursive;
+}
+
+.intro__link{
+    text-decoration: none;
+    
+}
+
+a{
+    font-family: 'Henny Penny', cursive;
+}
+
+.intro__link:hover{
+    text-decoration: none;
+
+} 
+
+
+.textnbutton{
+    text-align: center;
+    margin-top: 20rem;
+}
+/* this is for the intro CSS*/
+
+.header{
+
+    &__nav-container{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    &__ul{
+        display: flex;
+    }
+
+    &__li{
+        margin: 1rem 1rem;
+        list-style: none;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    &__link:hover{
+        text-decoration: none;
+        color: blue;
+        
+    }
+
+    &__logo-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo{
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    &__texts-container{
+        text-align: center;
+        margin: 2rem auto;
+        color: whitesmoke;
+        font-family: 'Lobster', cursive;
+    }
+
+    &__active{
+        border-bottom: whitesmoke 1px solid;
+    }
+
+    &__active:hover{
+        border-bottom: whitesmoke 1px solid;
+        color: whitesmoke;
+    }
+}
+
+.main{
+
+    &__container{
+        margin: 3rem 3rem;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 10%;
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__img{
+        width: 300px;
+        margin:1rem 1rem;
+        object-fit: cover;
+        border-radius: 10px;
+        opacity: 0.4;
+        transition: 0.5s ease-out;
+    }
+
+    &__img:hover{
+        width: 400px;
+        opacity: 1;
+        transition: 0.7s ease-in;
+    }
+}
+
+@keyframes pages{
+    0%{
+        opacity: 0;
+    }
+
+
+    50%{
+        opacity: 0;
+    }
+
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .header{
+
+        &__nav-container{
+            display:none;
+        }
+    }
+        
+    .menu-icon{
+        color: whitesmoke;
+        display:none;
+        margin: 1rem 1rem;
+        animation: pages 1s;
+        position: absolute;
+    }
+
+    .menu-icon-2{
+        color: whitesmoke;
+        display:flex;
+        margin: auto 1rem;
+        visibility: visible;
+        position: absolute;
+        animation: pages 1s;
+    }
+
+    .mobile-container{
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+        width: 100vw;
+        height: 870vh;
+        position: absolute;
+        display:none;
+        transition: 1s ease-in;
+        transition-duration: 0.5s ease;
+        animation: pages 1s;
+    }
+
+    .mobile-sidebar{
+        display:flex;
+        color: white;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .mobile-li{
+        list-style: none;
+    }
+
+    
+
+    .mobile_link{
+        display: flex;
+        color: white;
+        justify-content: flex-end;
+        text-decoration: none;
+        margin: 2rem 3rem;
+        font-size: 1.5rem;
+    }
+}
