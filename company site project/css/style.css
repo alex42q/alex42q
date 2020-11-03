@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/dream-pulse-header.jpg);
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1; }
+  .header__nav {
+    z-index: 100;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    width: 30%;
+    height: 100vh;
+    position: fixed; }
+  .header__nav-text {
+    border: 1px solid white;
+    max-width: 70%;
+    height: 20%;
+    margin-left: 5rem;
+    margin-top: 2rem; }
+  .header__nav-h1 {
+    line-height: 80px;
+    margin-top: 60px;
+    margin-left: 2.1rem;
+    color: white;
+    border: 1px solid white;
+    height: 90%;
+    max-width: 15rem;
+    font-size: 2rem;
+    text-align: center; }
+  .header__nav-nav {
+    margin: 6rem 6rem; }
+  .header__nav-ul {
+    list-style: none;
+    text-align: center; }
+  .header__nav-li {
+    margin-top: 1rem; }
+  .header__nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem; }
+  .header__nav-link:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem; }
+  .header__nav-icon {
+    color: white;
+    margin: 1rem 2rem; }
+  .header__text-container {
+    background: linear-gradient(rgba(241, 240, 240, 0.5), rgba(247, 247, 247, 0.5));
+    width: 35%;
+    height: 50%;
+    float: right;
+    margin: 3rem 3rem;
+    text-align: center;
+    border: 1px solid whitesmoke; }
+  .header__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row; }
+  .header__row2 {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .header__row-h1 {
+    margin: 3rem auto;
+    color: blue;
+    text-align: center; }
+  .header__row2-p {
+    color: black;
+    text-align: center;
+    margin: 1rem auto; }
+
+.main {
+  height: 50vh; }
+  .main__container {
+    margin-left: 27.9rem;
+    display: flex;
+    margin-top: 8rem;
+    justify-content: flex-end;
+    float: right;
+    height: 100%; }
+  .main__row {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  .main__column1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: right;
+    flex: 1;
+    margin: auto 3rem; }
+  .main__column2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    justify-content: right;
+    margin: auto 3rem; }
+  .main__h1 {
+    margin-top: 4rem;
+    color: cornflowerblue; }
+  .main__p {
+    margin-top: 4rem;
+    color: grey; }
+  .main__p2 {
+    margin-top: 3rem;
+    color: grey; }
+  .main__icon {
+    color: blue; }
+
+.ourwork {
+  height: 50vh;
+  margin-top: 25rem; }
+  .ourwork__h1 {
+    text-align: center;
+    justify-content: center; }
+  .ourwork__container {
+    margin-left: 27.9rem;
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column; }
+  .ourwork__row {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  .ourwork__column {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+    justify-content: center; }
+  .ourwork__dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5rem; }
