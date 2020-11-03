@@ -236,3 +236,94 @@ html {
     border-style: none;
     border-bottom: 1px solid grey;
     float: center; }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .header__nav {
+      display: none; }
+    .header__nav-nav {
+      display: none; }
+    .header__text-container {
+      background: linear-gradient(rgba(241, 240, 240, 0.5), rgba(247, 247, 247, 0.5));
+      width: 35%;
+      height: 50%;
+      text-align: center;
+      border: 1px solid whitesmoke; }
+    .header__nav-text {
+      margin: 0; }
+    .header__nav {
+      display: none; }
+  .main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35rem; }
+    .main__container {
+      flex-wrap: wrap;
+      display: flex;
+      margin-top: 8rem;
+      flex-direction: column;
+      height: 100%;
+      margin-left: 0;
+      width: 100%; }
+    .main__row {
+      display: flex;
+      flex-direction: column; }
+  .ourwork {
+    height: 160vh;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 20rem; }
+    .ourwork__container {
+      margin: 0;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column; }
+    .ourwork__row {
+      display: flex;
+      flex-direction: column; }
+    .ourwork__img {
+      object-fit: cover;
+      background-size: cover;
+      background-position: center; }
+    .ourwork_column {
+      display: flex;
+      flex-direction: row; }
+  .clients {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 3rem; }
+    .clients__container-logos {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-left: 0;
+      flex-wrap: wrap; }
+    .clients__row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .clients__border {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+  .talk {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 20rem; }
+    .talk__container {
+      display: flex; }
+    .talk__row {
+      display: flex;
+      flex-direction: column; }
+    .talk__column1 {
+      display: flex;
+      flex-direction: column;
+      flex: 1; }
+    .talk__column2 {
+      display: flex;
+      flex-direction: column;
+      flex: 1; } }

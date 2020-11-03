@@ -344,3 +344,147 @@ html{
 }
 
 
+@media screen and (max-width:1000px){
+    .header{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+
+
+        &__nav{
+            display: none;
+        }
+
+        &__nav-nav{
+            display:none;
+        }
+
+        &__text-container{
+            background: linear-gradient(rgba(241, 240, 240, 0.5), rgba(247, 247, 247, 0.5));
+            width: 35%;
+            height: 50%;
+            text-align: center;
+            border: 1px solid whitesmoke;
+
+        }
+
+        &__nav-text{
+            margin:0;
+        }
+
+        &__nav{
+            display:none;
+        }
+    }
+
+    .main {
+        margin: 0;
+        display:flex;
+        flex-direction:column;
+        margin-top:35rem;
+        
+    &__container{
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 8rem;
+        flex-direction: column;
+        height: 100%;
+        margin-left:0;
+        width: 100%;
+        }
+
+    &__row{
+        display:flex;
+        flex-direction: column;
+    }
+    }
+
+    .ourwork{
+        height: 160vh;
+        margin:0;
+        margin-left:0;
+        margin-top:20rem;
+
+        &__container{
+        
+        margin: 0;
+        margin-left: 0;
+        display:flex;
+        flex-direction:column;
+        }
+
+        &__row{
+            display:flex;
+            flex-direction:column;
+        }
+
+        &__img{
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &_column{
+            display:flex;
+            flex-direction:row;
+        }
+    }
+
+    .clients{
+        
+        margin:0;
+        margin-left:0;
+        margin-top:3rem;
+
+        &__container-logos{
+            display:flex;
+            flex-direction:row;
+            margin:0;
+            margin-left:0;
+            flex-wrap:wrap;
+        }
+
+        &__row{
+            display:flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+        }
+
+        &__border{
+            display:flex;
+            flex-direction:row;
+            width: 100%;
+
+        }
+        
+    }
+
+    .talk{
+        margin:0;
+        margin-left:0;
+        margin-top:20rem;
+    
+
+    &__container{
+        display:flex;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column1{
+        display:flex;
+        flex-direction: column;
+        flex:1;
+    }
+
+    &__column2{
+        display:flex;
+        flex-direction: column;
+        flex:1;
+        }
+    }
+}
+
