@@ -237,7 +237,108 @@ html {
     border-bottom: 1px solid grey;
     float: center; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 469px) {
+  .header {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .header__nav {
+      display: none; }
+    .header__nav-nav {
+      display: none; }
+    .header__text-container {
+      background: linear-gradient(rgba(241, 240, 240, 0.5), rgba(247, 247, 247, 0.5));
+      width: 35%;
+      height: 50%;
+      text-align: center;
+      border: 1px solid whitesmoke;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+    .header__nav-text {
+      margin: 0; }
+    .header__nav {
+      display: none; }
+  .main {
+    margin: 0;
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap; }
+    .main__container {
+      flex-wrap: wrap;
+      display: flex;
+      margin-top: 8rem;
+      flex-direction: row;
+      height: 100%;
+      margin-left: 0;
+      width: 100%; }
+    .main__row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+  .ourwork {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 80rem; }
+    .ourwork__container {
+      flex-wrap: wrap;
+      margin: 0;
+      margin-left: 0;
+      display: flex;
+      flex-direction: row; }
+    .ourwork__row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .ourwork__img {
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      flex-wrap: wrap; }
+    .ourwork_column {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+  .clients {
+    min-height: 100%;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 53rem; }
+    .clients__container-logos {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-left: 0;
+      flex-wrap: wrap; }
+    .clients__row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .clients__border {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap; }
+  .talk {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 47rem; }
+    .talk__container {
+      display: flex; }
+    .talk__row {
+      display: flex;
+      flex-direction: column; }
+    .talk__column1 {
+      display: flex;
+      flex-direction: column;
+      flex: 1; }
+    .talk__column2 {
+      display: flex;
+      flex-direction: column;
+      flex: 1; } }
+
+@media screen and (min-width: 470px) and (max-width: 900px) {
   .header {
     width: 100%;
     display: flex;
@@ -281,7 +382,7 @@ html {
       margin: 0;
       margin-left: 0;
       display: flex;
-      flex-direction: column; }
+      flex-direction: row; }
     .ourwork__row {
       display: flex;
       flex-direction: column; }
@@ -293,6 +394,7 @@ html {
       display: flex;
       flex-direction: row; }
   .clients {
+    min-height: 100%;
     margin: 0;
     margin-left: 0;
     margin-top: 3rem; }
@@ -301,7 +403,8 @@ html {
       flex-direction: row;
       margin: 0;
       margin-left: 0;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-top: 1rem; }
     .clients__row {
       display: flex;
       flex-direction: column;
@@ -313,7 +416,7 @@ html {
   .talk {
     margin: 0;
     margin-left: 0;
-    margin-top: 20rem; }
+    margin-top: 12rem; }
     .talk__container {
       display: flex; }
     .talk__row {
