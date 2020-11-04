@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/cathy-pham-3jAN9InapQI-unsplash.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: top;
+}
+
+.header{
+    margin-top:2rem;
+
+    &__container{
+        text-align: center;
+    }
+
+    &__h1{
+        color: white;
+    }
+}
+
+.form{
+    display:flex;
+    justify-content: center;
+    margin-top:2rem;
+
+}
+
+.box{
+    text-align: center;
+    border: 1px solid blue;
+    width: 40%;
+    color:white;
+    
+
+    &__top-container{
+        background-color:blue;
+        width: 100%;
+    }
+
+    &__container-values{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__h1{
+        color: white;
+    }
+    &__hr-top{
+        margin-top:0.5rem;
+    }
+    &__tabs-buttons{
+        margin-top:0.5rem;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__adult{
+        margin: auto 1rem;
+        border-style: none;
+        border-bottom: 1px solid blue;
+        background-color:white;
+        font-size: 1.2rem;
+        display:none;
+    }
+    &__Child{
+        margin: auto 1rem;
+        border-style: none;
+        border-bottom: 1px solid white;
+        font-size: 1.2rem;
+        display:none;
+    }
+    
+    &__height{
+        margin-top:1.2rem;
+    }
+    &__weight{
+        margin-top:1.2rem;
+    }
+    &__age{
+        margin-top:1.2rem;
+        display:none;
+    }
+    &__sex{
+        margin-top:1.2rem;
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: row;
+    }
+
+    &__radios{
+        margin-left: 1rem;
+    }
+
+    &__actity{
+        margin-top:1.2rem;
+    }
+}
+
+.result{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}

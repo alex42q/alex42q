@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header__container">
+            <h1 class="header__h1">Welcome to The BMI Calculator</h1>
+        </div>
+    </div>
+    
+    <form class="form" action="">
+    <div class="box">
+        <div class="box__top-container">
+            <div class="box__header">
+                <h1 class="box__h1">BMI Calculator</h1>
+            </div>
+        </div>
+        <div class="box__tabs-buttons">
+            <button class="box__adult">Adult</button>
+            <button class="box__Child">Child</button>
+        </div>
+        <hr class="box__hr-top"></hr>
+        <div class="box__container-values">
+        <div class="box__height">
+            <h5 class="box__h5">Height</h5>
+            <input id="height" type="text" placeholder="Centimetres">
+        </div>
+        <div class="box__weight">
+            <h5 class="box__h5">Weight</h5>
+            <input id="weight" type="text" placeholder="Kilograms">
+        </div>
+        <div class="box__age">
+            <h5 class="box__h5">Age</h5>
+            <input type="text" placeholder="Age">
+        </div>
+    </div>
+        <div class="box__sex">
+            <h5 class="box__h5s">Sex:</h5>
+            <input class="box__radios" type="radio" name="sex"><h6 class="box__h6">Male</h6>
+            <input class="box__radios" type="radio" name="sex"><h6 class="box__h6">Female</h6>
+        </div>
+        <div class="box__actity">
+            <h5 class="box__h5">Activity Level</h5>
+            <input type="radio" name="activity"><h6 class="box__h6">Inactive</h6>
+                <p class="box__p">Less than 30 minutes a week</p>
+            <input type="radio" name="activity"><h6 class="box__h6">Moderately Active</h6>
+            <p class="box__p">Between 30 and 60 minutes a week</p>
+            <input type="radio" name="activity"><h6 class="box__h6">Active</h6>
+            <p class="box__p">Between 60 and 150 minutes a week</p>
+        </div>
+        <hr class="box__hr"></hr>
+        <button id="submit" onclick="calc();return false;">click</button>
+    </div>
+</form>
+
+<div class="result">
+    <h1 id="result" class="result__h1"></h1>
+</div>
+<script src="./js/calculate.js"></script>
+</body>
+</html>
