@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+  animation: pages 1s;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    height: 100vh;
+    width: 100%;
+    animation: pages 1s;
+    animation-duration: 1.3s;
+}
+
+.header__nav-container {
+    display: flex;
+    justify-content: flex-end; }
+  
+  .header__ul {
+    display: flex; }
+  
+  .header__li {
+    margin: 1rem 1rem;
+    list-style: none; }
+  
+  .header__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; }
+  
+  .header__link:hover {
+    text-decoration: none;
+    color: blue; }
+  
+  .header__logo-container {
+    display: flex;
+    justify-content: center; }
+  
+  .header__logo {
+    width: 100px;
+    border-radius: 50%; }
+  
+  .header__texts-container {
+    text-align: center;
+    margin: 10rem auto;
+    color: whitesmoke; 
+    font-family: 'Henny Penny', cursive;}
+  
+  .header__active {
+    border-bottom: whitesmoke 1px solid; }
+  
+  .header__active:hover {
+    border-bottom: whitesmoke 1px solid;
+    color: whitesmoke; }
+  
+.contact-form-container{
+    display: flex;
+    background-color: rgb(240, 85, 111);
+    justify-content: center;
+    justify-items: center;
+    height: 25rem;
+    border-radius: 10px;
+    width: 60%;
+    justify-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-top:1rem;
+}
+
+.contact-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact__h1{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Henny Penny', cursive;
+}
+
+span{
+    color:black;
+}
+
+
+.row1{
+display: flex;
+flex: 2;
+width: 100%;
+flex-wrap: wrap;
+flex-basis: 20%;
+}
+
+.row2{
+    display: flex;
+    flex: 2;
+    width: 100%;
+    flex-wrap: wrap; 
+    flex-basis: 20%;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.in1{
+    border: none;
+    padding: 10px 0;
+    background: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    width: 70%;
+}
+
+.in2{
+    border: none;
+    padding:10px 0;
+    background: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    width: 70%;
+}
+.app-form-control {
+    width: 70%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+
+  .contact-inputs{
+      margin-top:2rem;
+  }
+
+  .contact-text{
+      width: 100%;
+    justify-self: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top:2rem;
+  }
+
+  .app-form-group.message {
+    margin-top: 80px;
+  }
+
+.in3{
+    border: none;
+    background: none;
+    padding:10px 0;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    width: 70%;
+}
+
+.contact-buttons{
+    display: inline-flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+.reset, .submit{
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.feel-free{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Henny Penny', cursive;
+}
+
+.container23{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    
+}
+
+@keyframes pages{
+  0%{
+      opacity: 0;
+  }
+
+
+  50%{
+      opacity: 0;
+  }
+
+
+  100%{
+      opacity: 1;
+  }
+}
