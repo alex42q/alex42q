@@ -7,6 +7,7 @@ function closeNews(){
     if(icon.onclick){
         subCont.style.opacity = "0";
         subCont.style.transition = "1s ease-out"
+        subCont.style.display = "none";
     }
 };
 

@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .sub{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     height: 340vh;
     width: 99vw;
     position: absolute;
+    display: none;
 }
 
 .sub__card{
@@ -119,6 +124,7 @@
     text-decoration: none;
     color: white;
     font-size: 1.4rem;
+    font-family: 'Concert One', cursive;
 }
 
 .header__text-container{
@@ -130,6 +136,7 @@
 .header__h1{
     color: white;
     font-size: 3rem;
+    font-family: 'Rokkitt', serif;
 }
 
 .header__p{
@@ -137,6 +144,7 @@
     color: whitesmoke;
     font-weight: bolder;
     font-size: 1.2rem;
+    font-family: 'Rokkitt', serif;
 }
 
 
@@ -151,6 +159,7 @@
 
 .main__top_p{
     color: gray;
+    font-family: 'Rokkitt', serif;
 }
 .main__container-1{
     display: flex;
@@ -171,10 +180,31 @@
     border-style: none;
     background-color: white;
     border-bottom: 2px solid orange;
+    font-family: 'Rokkitt', serif;
 }
 
 .main__h5{
     color: orange;
+    font-family: 'Rokkitt', serif;
+}
+
+.main__top_h1{
+    font-family: 'Concert One', cursive;
+}
+
+.main__h1{
+    font-family: 'Concert One', cursive;
+}
+.main__h2{
+    font-family: 'Concert One', cursive;
+}
+
+.main__p1{
+    font-family: 'Rokkitt', serif;
+}
+
+.main__p2{
+    font-family: 'Rokkitt', serif;
 }
 
 .main__left-side{
@@ -218,6 +248,7 @@
     margin-top: 1.3rem;
     margin: auto auto;
     height: 23vh;
+    margin-bottom: 2rem;
 }
 
 .stats__icon-and-text{
@@ -257,6 +288,10 @@
     margin-top: 3rem;
 }
 
+.courses__h1{
+    font-family: 'Concert One', cursive;
+}
+
 .courses__texts-container{
     text-align: center;
 }
@@ -290,11 +325,13 @@
 .courses__h3{
     text-align: center;
     margin-top: 1rem;
+    font-family: 'Karla', sans-serif;
 }
 
 .courses__p{
     text-align: center;
     margin-top: 1rem;
+    font-family: 'Karla', sans-serif;
 }
 
 .plan{
@@ -303,6 +340,10 @@
 
 .plan__top-texts{
     text-align: center;
+}
+
+.plan__h1{
+    font-family: 'Concert One', cursive;
 }
 
 .plan__container{
@@ -330,22 +371,71 @@
     margin-left: 3rem;
 }
 
+
 .plan__column{
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    
+    margin-bottom: 2rem;
 }
 
 .plan__card-top{
-    background-color: blue;
-    width: 30vw;
     text-align: center;
 }
 
 .plan__card-bottom{
     text-align: center;
+    margin-top: 0.5rem;
+}
+
+.plan__main-text{
+    margin-top:1rem;
+}
+
+.plan__main-column{
+    display:flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.plan__h5{
+    margin-left: 0.5rem;
+    border-bottom: blue 3px solid;
+    font-family: 'Karla', sans-serif;
+    font-size:1.3rem;
+}
+
+.plan__h2{
+    font-family: 'Karla', sans-serif;
+    font-size:2.3rem;
+}
+
+.plan__icon{
+    color: blue;
+}
+
+.plan__button-sec{
+    text-align: center;
     margin-top: 1rem;
+}
+
+.plan__button{
+    width: 70%;
+    height: 140%;
+    margin-bottom: 1rem;
+    background-color: blue;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.plan__link{
+    text-decoration: none;
+}
+
+.plan__p-button{
+    color: white;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
 }
 
 .enroll{
@@ -363,6 +453,7 @@
 
 .enroll__h1{
     color: white;
+    font-family: 'Concert One', cursive;
 }
 
 .enroll__form{
@@ -467,4 +558,5 @@
     text-align: center;
     margin:2rem 2rem;
 }
+
 

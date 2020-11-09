@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!----------------------fonts------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Rokkitt&display=swap" rel="stylesheet"> 
     <title>School</title>
 </head>
-<body>
+<body window.onscroll="increment">
     <div id="sub" class="sub">
         <div class="sub__container">
             <div class="sub__card">
@@ -33,9 +36,9 @@
                 <div class="header__navbar">
                 <ul class="header__ul">
                     <li class="header__li"><a class="header__link header__active" href="#">Home</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Cources</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Teachers</a></li>
-                    <li class="header__li"><a class="header__link" href="#">About School</a></li>
+                    <li class="header__li"><a class="header__link" href="#courses">Cources</a></li>
+                    <li class="header__li"><a class="header__link" href="./trainer.html">Be a Trainer</a></li>
+                    <li class="header__li"><a class="header__link" href="#about">About School</a></li>
                 </ul>
             </div>
             </div>
@@ -46,7 +49,7 @@
         </div>
     </div>
 
-    <div class="main">
+    <div id="about" class="main">
         <div class="main__text-top">
             <h1 class="main__top_h1">About</h1>
             <p class="main__top_p">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,<br> nisi elit consequat ipsum, nec sagittis sem!</p>
@@ -80,7 +83,7 @@
         <div class="stats__container">
             <div class="stats__row">
                 <div class="stats__column">
-                    <h3 class="stats__h3">1230</h3>
+                    <h3 id="stat1" class="stats__h3 stats__h3__1"></h3>
                     <div class="stats__icon-and-text">
                     <div class="stats__icon"><i class="stats__icon fab fa-app-store-ios fa-3x"></i></div>
                     <hr class="stats__hr">
@@ -89,7 +92,7 @@
                     <h4 class="stats__h4">Quisque porttitor eros quis leo pulvinar,<br> at hendrerit sapien iaculis.</h4>
                 </div>
                 <div class="stats__column">
-                    <h3 class="stats__h3">331</h3>
+                    <h3 id="stat2" class="stats__h3 stats__h3__2"></h3>
                     <div class="stats__icon-and-text">
                     <div class="stats__icon"><i class="stats__icon fab fa-app-store-ios fa-3x"></i></div>
                     <hr class="stats__hr">
@@ -98,7 +101,7 @@
                     <h4 class="stats__h4">Quisque porttitor eros quis leo pulvinar,<br> at hendrerit sapien iaculis.</h4>
                 </div>
                 <div class="stats__column">
-                    <h3 class="stats__h3">8901</h3>
+                    <h3 id="stat3" class="stats__h3 stats__h3__3"></h3>
                     <div class="stats__icon-and-text">
                     <div class="stats__icon"><i class="stats__icon fab fa-app-store-ios fa-3x"></i></div>
                     <hr class="stats__hr">
@@ -110,7 +113,7 @@
         </div>
     </div>
 
-    <div class="courses">
+    <div id="courses" class="courses">
         <div class="courses__texts-container">
             <h1 class="courses__h1">Our Courses</h1>
             <p class="courses__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
@@ -147,43 +150,121 @@
                 <div class="plan__row1">
                 <div class="plan__column">
                 <div class="plan__card-top">
-                    <h2 class="plan__h2">45$</h2>
-                    <h3 class="plan__h3">PER MONTH</h3>
+                    <h2 class="plan__h2">Javascript</h2>
                 </div>
                 <div class="plan__card-bottom">
-                    <h1 class="plan__h1-card">Javascript</h1>
+                    <h1 class="plan__h1-card">100$</h1>
+                    <h3 class="plan__h3-price">/Month</h3>
+                </div>
+                <div class="plan__main-text">
+                    <h2 class="plan__h2">What you will learn</h2>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">HTML/CSS</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Javascript</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Node JS</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Express JS</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">MongoDB</h5>
+                </div>
+                <div class="plan__button-sec">
+                    <button class="plan__button"><a class="plan__link" href="./student.html"><p class="plan__p-button">Choose This</p></a></button>
                 </div>
             </div>
         </div>
            </div>
 
             <div class="plan__card">
-                <div class="plan__row2">
+                <div class="plan__row1">
                 <div class="plan__column">
-                    <div class="plan__card-top">
-                        <h2 class="plan__h2">45$</h2>
-                        <h3 class="plan__h3">PER MONTH</h3>
-                    </div>
-                    <div class="plan__card-bottom">
-                        <h1 class="plan__h1-card">Javascript</h1>
-                    </div>
+                <div class="plan__card-top">
+                    <h2 class="plan__h2">C++</h2>
                 </div>
-            </div>
-            </div>
-
-            <div class="plan__card">
-                <div class="plan__row3">
-                <div class="plan__column">
-                    <div class="plan__card-top">
-                        <h2 class="plan__h2">45$</h2>
-                        <h3 class="plan__h3">PER MONTH</h3>
-                    </div>
-                    <div class="plan__card-bottom">
-                        <h1 class="plan__h1-card">Javascript</h1>
-                    </div>
+                <div class="plan__card-bottom">
+                    <h1 class="plan__h1-card">80$</h1>
+                    <h3 class="plan__h3-price">/Month</h3>
+                </div>
+                <div class="plan__main-text">
+                    <h2 class="plan__h2">What you will learn</h2>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">HTML/CSS</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">C++</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Encapsulation</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Data Hiding</h5>
+                </div>
+                <div class="plan__main-column">
+                    <i class="plan__icon fas fa-check fa-2x">
+                    </i><h5 class="plan__h5">Inheritance</h5>
+                </div>
+                <div class="plan__button-sec">
+                    <button class="plan__button"><a class="plan__link" href="./student.html"><p class="plan__p-button">Choose This</p></a></button>
                 </div>
             </div>
         </div>
+           </div>
+
+           <div class="plan__card">
+            <div class="plan__row1">
+            <div class="plan__column">
+            <div class="plan__card-top">
+                <h2 class="plan__h2">Python</h2>
+            </div>
+            <div class="plan__card-bottom">
+                <h1 class="plan__h1-card">50$</h1>
+                <h3 class="plan__h3-price">/Month</h3>
+            </div>
+            <div class="plan__main-text">
+                <h2 class="plan__h2">What you will learn</h2>
+            </div>
+            <div class="plan__main-column">
+                <i class="plan__icon fas fa-check fa-2x">
+                </i><h5 class="plan__h5">HTML/CSS</h5>
+            </div>
+            <div class="plan__main-column">
+                <i class="plan__icon fas fa-check fa-2x">
+                </i><h5 class="plan__h5">Python</h5>
+            </div>
+            <div class="plan__main-column">
+                <i class="plan__icon fas fa-check fa-2x">
+                </i><h5 class="plan__h5">Maths With Python</h5>
+            </div>
+            <div class="plan__main-column">
+                <i class="plan__icon fas fa-check fa-2x">
+                </i><h5 class="plan__h5">Django</h5>
+            </div>
+            <div class="plan__main-column">
+                <i class="plan__icon fas fa-check fa-2x">
+                </i><h5 class="plan__h5">OOP Programming</h5>
+            </div>
+            <div class="plan__button-sec">
+                <button class="plan__button"><a class="plan__link" href="./student.html"><p class="plan__p-button">Choose This</p></a></button>
+            </div>
+        </div>
+    </div>
+       </div>
     </div>
 </div>
 
@@ -244,5 +325,6 @@
 <!---------------------Scripts------------------------------->
 <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
 <script src="./js/newsletter.js"></script>
+<script src="./js/counter.js"></script>
 </body>
 </html>
