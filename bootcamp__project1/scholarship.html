@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/student.css">
-    <title>Student Sign Up</title>
+    <link rel="stylesheet" href="./css/scholarship.css">
+    <title>Hunt a Scholarship </title>
 </head>
 <body>
     <div class="header">
@@ -16,36 +16,38 @@
                 <div class="header__navbar">
                 <ul class="header__ul">
                     <li class="header__li"><a class="header__link" href="./index.html">Home</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Cources</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Be a Trainer</a></li>
-                    <li class="header__li"><a class="header__link" href="#">About School</a></li>
+                    <li class="header__li"><a class="header__link" href="#courses">Cources</a></li>
+                    <li class="header__li"><a class="header__link" href="./trainer.html">Be a Trainer</a></li>
+                    <li class="header__li"><a class="header__link" href="#about">About School</a></li>
+                    <li class="header__li"><a class="header__link header__active" href="./scholarship.html">Hunt a Scholarship</a></li>
                 </ul>
             </div>
             </div>
         </div>
         <div class="header__text-container">
-            <h1 class="header__h1">Student form</h1>
+            <h1 class="header__h1">Hunt your Scholarship and win a free course</h1>
             <p class="header__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat, <br>temporibus eaque a provident accusantium animi recusandae aut deleniti aliquam exercitationem illum hic maxime, similique voluptatem dolorum rem voluptate qui!</p>
         </div>
     </div>
 
     <form action="get">
         <div class="form__top-text">
-            <h4 class="form__h4">Hello student!! Enroll to your favourite course</h4>
+            <h4 class="form__h4">Sign up to be a teacher</h4>
         </div>
         <div class="form__firstLast">
         <input class="form__input" type="text" placeholder="Firstname">
         <input class="form__input" type="text" placeholder="Lastname">
         </div>
         <div class="form__sub">
-            <h5 class="form__sub-birth">Birth Date</h5>
-        <input class="form__input sub" type="date" placeholder="Birth Date">
+        <input class="form__input sub" type="text" placeholder="Subject">
         </div>
         <br>
         <div class="form__radios">
-        <h5 class="form__fees">Tuition Fees</h5>
-        <input class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Month</p>
-        <input class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Year</p>
+        <input class="form__radio" name="lang" type="radio"><p class="form__p">Javascript</p>
+        <input class="form__radio" name="lang" type="radio"><p class="form__p">C++</p>
+        <input class="form__radio" name="lang" type="radio"><p class="form__p">C#</p>
+        <input class="form__radio" name="lang" type="radio"><p class="form__p">Python</p>
+        <input class="form__radio" name="lang" type="radio"><p class="form__p">Full Stack</p>
     </div>
     <div class="form__acceptAndCheck">
         <input type="checkbox"><p class="p__check"> I accept the Terms of Use & Privacy Policy.</p>
@@ -56,6 +58,6 @@
     </form>
 
     <!---------------------Scripts------------------------------->
-<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
+<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
 </body>
 </html>

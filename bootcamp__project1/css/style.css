@@ -431,6 +431,10 @@ html{
     text-decoration: none;
 }
 
+.plan__p{
+    font-family: 'Karla', sans-serif;
+}
+
 .plan__p-button{
     color: white;
     font-weight: bold;
