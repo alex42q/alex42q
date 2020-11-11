@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header__text">
+            <h1 class="header__h1">Calculator</h1>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main__form-cont">
+            <form action="">
+                <div id="screen" class="main__screen" type="text"></div><br>
+                <button id="b+" class="main__b+ main__button">+</button>
+                <button id="b-" class="main__b- main__button" >-</button>
+                <button id="b*" class="main__b* main__button">*</button>
+                <button id="b/" class="main__b/ main__button">/</button>
+                <div class="main__num-cont">
+                    <div class="main__row">
+                        <div class="main__column">
+                            <button onclick="calculator();return false;" id="n9" class="main__button-num" value="9">9</button>
+                            <button class="main__button-num">8</button>
+                            <button class="main__button-num">7</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

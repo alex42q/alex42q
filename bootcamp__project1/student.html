@@ -29,33 +29,41 @@
         </div>
     </div>
 
-    <form action="get">
+    <form onsubmit="return false;">
         <div class="form__top-text">
             <h4 class="form__h4">Hello student!! Enroll to your favourite course</h4>
         </div>
         <div class="form__firstLast">
-        <input class="form__input" type="text" placeholder="Firstname">
-        <input class="form__input" type="text" placeholder="Lastname">
+        <input id="FirstNameInput" class="form__input" name="FirstName" type="text" placeholder="Firstname">
+        <input id="LastNameInput" class="form__input" name="LastName" type="text" placeholder="Lastname">
         </div>
         <div class="form__sub">
-            <h5 class="form__sub-birth">Birth Date</h5>
-        <input class="form__input sub" type="date" placeholder="Birth Date">
+            <h5 id="BirthInput" class="form__sub-birth">Birth Date</h5>
+        <input class="form__input sub" name="Birth" type="date" placeholder="Birth Date">
         </div>
         <br>
         <div class="form__radios">
         <h5 class="form__fees">Tuition Fees</h5>
-        <input class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Month</p>
-        <input class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Year</p>
+        <input name="FeesCheck1" class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Month</p>
+        <input name="FeesCheck2" class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Year</p>
+    </div>
+    <div class="form__radios">
+        <input class="form__radio" name="lang" type="checkbox" checked><p class="form__p">Javascript</p>
+        <input class="form__radio" name="lang" type="checkbox"><p class="form__p">C++</p>
+        <input class="form__radio" name="lang" type="checkbox"><p class="form__p">Python</p>
     </div>
     <div class="form__acceptAndCheck">
         <input type="checkbox"><p class="p__check"> I accept the Terms of Use & Privacy Policy.</p>
     </div>
     <div class="form__button-signup">
-        <button class="form__button"><p class="button__p">Sign Up</p></button>
+        <button onclick="FirstName.getThings()" type="submit" id="btn" class="form__button" ><p class="button__p"></p>Sign Up</p></button>
+        <h1 id="h1"></h1>
     </div>
     </form>
 
     <!---------------------Scripts------------------------------->
-<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
+    <script src="calc.js"></script>
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
+
 </body>
 </html>

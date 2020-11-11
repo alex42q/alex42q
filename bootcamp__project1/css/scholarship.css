@@ -131,6 +131,12 @@ form{
     text-align: center;
 }
 
+.form__oral-mark {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
 .form__acceptAndCheck{
     display: flex;
     justify-content: center;

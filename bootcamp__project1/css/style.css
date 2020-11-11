@@ -526,6 +526,10 @@ html{
     color: grey;
 }
 
+.footer__email{
+    color: whitesmoke;
+}
+
 .footer__icon{
     background-color: rgb(104, 104, 211);
 }
