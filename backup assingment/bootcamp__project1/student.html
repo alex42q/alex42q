@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/student.css">
+    <title>Student Sign Up</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header__container">
+            <div class="header__navbar-container">
+                <div class="icon__container">
+                    <i class="header__icon fas fa-book-reader fa-3x"></i>
+                </div>
+                <div class="header__navbar">
+                <ul class="header__ul">
+                    <li class="header__li"><a class="header__link" href="./index.html">Home</a></li>
+                    <li class="header__li"><a class="header__link" href="#">Cources</a></li>
+                    <li class="header__li"><a class="header__link" href="#">Be a Trainer</a></li>
+                    <li class="header__li"><a class="header__link" href="#">About School</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="header__text-container">
+            <h1 class="header__h1">Student form</h1>
+            <p class="header__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat, <br>temporibus eaque a provident accusantium animi recusandae aut deleniti aliquam exercitationem illum hic maxime, similique voluptatem dolorum rem voluptate qui!</p>
+        </div>
+    </div>
+
+    <form name="Form">
+        <div class="form__top-text">
+            <h4 id="text" class="form__h4">Hello student!! Enroll to your favourite course</h4>
+        </div>
+        <div id="form__firstLast" class="form__firstLast">
+        <input id="FirstnameInput" class="form__input" type="text" placeholder="Firstname">
+        <input id="LastNameInput" class="form__input" type="text" placeholder="Lastname">
+        </div>
+        <div id="form__sub" class="form__sub">
+            <h5 class="form__sub-birth">Birth Date</h5>
+        <input id="birth" class="form__input sub" type="date" placeholder="Birth Date">
+        </div>
+        <h1 class="post__h1" id="post__h1"></h1>
+        <h1 class="post__h1" id="post__h2"></h1>
+        <h1 class="post__h1" id="post__h3"></h1>
+        <h1 class="post__h1" id="post__h4"></h1>
+        <h1 class="post__h1" id="post__h5"></h1>
+        <h1 class="post__h1" id="post__h6"></h1>
+        <br>
+        <div id="form__radios" class="form__radios">
+        <h5 class="form__fees">Tuition Fees</h5>
+        <input id="month" class="form__radio" name="Pay" type="radio" value="Month"><p class="form__p">Pay Per Month</p>
+        <input id="year" class="form__radio" name="Pay" type="radio" value="Year"><p class="form__p">Pay Per Year</p>
+    </div>
+    <div id="form__accept" class="form__acceptAndCheck">
+        <input id="checkbox" type="checkbox"><p class="p__check"> I accept the Terms of Use & Privacy Policy.</p>
+    </div>
+    <div class="form__button-signup">
+        <button type="button" onclick="FirstName.getThings()" id="btn" class="form__button"><p class="button__p">Sign Up</p></button>
+    </div>
+    </form>
+
+    <!---------------------Scripts------------------------------->
+    <script src="./js/student.js"></script>
+<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
+</body>
+</html>

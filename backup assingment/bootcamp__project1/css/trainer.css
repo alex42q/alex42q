@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    height: 70vh;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header__active{
+    border-bottom: 2px solid black;
+}
+
+.header__navbar-container{
+    display: flex;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    width: 100%;
+}
+
+
+.header__icon{
+    display: flex;
+    color: white;
+    margin: 1.5rem 2rem;
+    justify-content: flex-start;
+}
+
+.header__ul{
+    display: flex;
+    margin: auto 10rem;
+}
+
+.header__li{
+    list-style: none;
+    margin: 2rem 2rem;
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.header__text-container{
+    text-align: center;
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.header__h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.header__p{
+    margin-top: 1rem;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+form{
+    margin:3rem 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form__top-text{
+    text-align: center;
+    margin: 1rem 5rem;
+    background: none;
+    background-color: none;
+}
+
+.form__firstLast{
+    text-align: center;
+    border-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.form__sub{
+    margin-bottom: 2.5rem;
+}
+
+.sub{
+    width: 80%;
+    margin-left: 4rem;
+}
+
+.form__radios{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.form__p{
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.form__radio{
+    margin-left: 2rem;
+}
+
+.form__input{
+    border-style: none;
+    background-color: rgb(219, 211, 211);
+    height: 5vh;
+    text-align: center;
+}
+
+.form__acceptAndCheck{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.p__check{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.form__button-signup{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form__button{
+    width: 30%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    background-color: aqua;
+    border-style: none;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+.button__p{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
