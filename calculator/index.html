@@ -14,24 +14,47 @@
     </div>
 
     <div class="main">
-        <div class="main__form-cont">
-            <form action="">
-                <div id="screen" class="main__screen" type="text"></div><br>
-                <button id="b+" class="main__b+ main__button">+</button>
-                <button id="b-" class="main__b- main__button" >-</button>
-                <button id="b*" class="main__b* main__button">*</button>
-                <button id="b/" class="main__b/ main__button">/</button>
-                <div class="main__num-cont">
-                    <div class="main__row">
-                        <div class="main__column">
-                            <button onclick="calculator();return false;" id="n9" class="main__button-num" value="9">9</button>
-                            <button class="main__button-num">8</button>
-                            <button class="main__button-num">7</button>
-                        </div>
+        <div class="container-result">
+            <div class="row-result">
+                <div class="column-result">
+                    <div class="result"><input class="result__input" type="text"></div>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <button id="button0" class="button">0</button>
+                        <button id="button1" class="button">1</button>
+                        <button id="button2" class="button">2</button>
+                        <button id="plus">+</button>
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="row">
+                    <div class="column">
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button id="minus">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                        <button id="mulit">x</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <button>9</button>
+                        <button>C</button>
+                        <button>=</button>
+                        <button id="dier">/</button>
+                    </div>
+                </div>
+            </div>
     </div>
     <script src="./js/script.js"></script>
 </body>
