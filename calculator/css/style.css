@@ -3,36 +3,39 @@
   padding: 0;
   box-sizing: border-box; }
 
-.main {
-  width: 100%; }
-  .main__form-cont {
-    display: flex;
-    justify-content: center; }
-  .main__screen {
-    justify-content: center;
+  .header{
     text-align: center;
-    width: 40vw;
-    height: 30%;
-    border: 1px solid black; }
-  .main__button {
-    margin-top: 0.5rem;
-    width: 40vw;
-    text-align: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex; }
-  .main__num-cont {
-    display: flex;
-    width: 100%; }
-  .main__row {
-    display: flex;
-    width: 130%;
-    flex-direction: row; }
-  .main__column {
-    display: flex;
-    flex-direction: row;
-    width: 130%; }
-  .main__button-num {
-    display: flex;
-    width: 100%;
-    justify-content: space-between; }
+  }
+
+.main{
+  width: 100%;
+}
+
+.screen{
+  margin: 1rem auto;
+  width: 40rem;
+  height: 3rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+.column{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+button{
+  width: 10rem;
+}

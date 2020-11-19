@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.nav__container {
+  display: flex; }
+
+.nav__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+.nav__column-left {
+  display: flex;
+  justify-items: center;
+  text-align: center; }
+
+.nav__h1 {
+  text-align: center;
+  margin: 1rem 1rem; }
+
+.nav__column-right {
+  justify-content: flex-end; }
+
+.nav__ul {
+  display: flex;
+  list-style: none; }
+
+.nav__li {
+  margin: 1rem 1rem; }
+
+.nav__link {
+  text-decoration: none;
+  color: black; }
+
+.header {
+  z-index: 150;
+  background-color: #2f374d; }
+  .header__svg1 {
+    width: 13%; }
+  .header__container {
+    display: flex; }
+  .header__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .header__texts {
+    margin-top: 10rem;
+    color: white; }
+  .header__h1 {
+    font-size: 4rem; }
+  .header__p {
+    margin-top: 1rem; }
+  .header__button {
+    margin-top: 1.4rem;
+    border-style: none;
+    background: none;
+    border: 2px solid whitesmoke;
+    width: 30%;
+    padding: 0.7rem;
+    color: white;
+    font-weight: bolder; }
+  .header__svg2 {
+    position: absolute;
+    right: 0rem; }
+  .header__img {
+    z-index: 100;
+    position: relative;
+    top: 5rem; }
+
+.diff {
+  margin-top: 10rem; }
+  .diff__container {
+    width: 100%; }
+  .diff__top-text {
+    font-size: 2.4rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem; }
+  .diff__row {
+    display: flex;
+    flex-direction: row;
+    margin: auto 10rem; }
+  .diff__column {
+    margin: auto 1rem; }
+  .diff__h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem; }
+  .diff__p {
+    margin-top: 1rem; }
+
+.find {
+  margin-top: 10rem; }
+  .find__container {
+    display: flex;
+    margin: auto 10rem;
+    background-color: #2f374d;
+    z-index: 0; }
+  .find__button {
+    z-index: 10;
+    border-style: none;
+    background: none;
+    border: 2px solid whitesmoke;
+    width: 100%;
+    padding: 0.7rem;
+    color: white;
+    font-weight: bolder;
+    margin-left: 5rem; }
+  .find__row {
+    display: flex;
+    z-index: 10;
+    width: 100%; }
+  .find__column-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around; }
+  .find__column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .find__h1 {
+    margin-left: 5rem;
+    color: white;
+    font-size: 2.5rem; }
+  .find__svg {
+    z-index: 1;
+    position: relative;
+    right: 8rem; }
