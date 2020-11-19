@@ -1,10 +1,10 @@
-const menu = document.querySelector(".nav__menu-icon");
+const menu = document.getElementById("menu")
 
-menu.addEventListener("click", menuFunction);
-
-function menuFunction(){
-    if(menu.style.display == "flex"){
+menu.addEventListener("click", function(){
+    if(menu.style.display = "block"){
         alert("hes")
+    }else if(menu.style.display = "block"){
+        alert()
     }
-    
-}
+});
+
