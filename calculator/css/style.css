@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+<<<<<<< HEAD
 .container-result, .container{
   display: flex;
   justify-content: center;
@@ -23,4 +24,41 @@ button{
   border-style: none;
   border-radius: 10px;
   height: 3rem;
+=======
+  .header{
+    text-align: center;
+  }
+
+.main{
+  width: 100%;
+}
+
+.screen{
+  margin: 1rem auto;
+  width: 40rem;
+  height: 3rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+.column{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+button{
+  width: 10rem;
+>>>>>>> 8b16617b02c6be493cb93dd46714dbe1248120fe
 }
