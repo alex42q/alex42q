@@ -13,7 +13,6 @@ function menuFunc(){
     links.classList.toggle("li-toggle")
   })
 
-
 }
 
 

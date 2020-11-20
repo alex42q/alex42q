@@ -3,6 +3,34 @@
   margin: 0;
   box-sizing: border-box; }
 
+.login {
+  box-shadow: 15px 5px 15px 5px;
+  position: absolute;
+  top: 10rem;
+  z-index: 300;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+  max-width: 100%; }
+  .login__icon {
+    color: white; }
+  .login__container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .login__form {
+    width: 100%; }
+  .login__input {
+    text-align: center;
+    width: 25vw;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 1.2rem; }
+  .login__button {
+    border-style: none;
+    background-color: #4444f5; }
+
 .nav__container {
   display: flex; }
 

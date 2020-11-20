@@ -9,6 +9,31 @@
   <title>Insure Landing</title>
 </head>
 <body>
+<div class="login">
+  <div class="login__container">
+    <div class="login__row">
+      <form id="form" class="login__form" action="">
+        <i id="formicon" class="login__icon fas fa-times fa-2x"></i>
+      <div class="login__username">
+        <input name="username" id="formUserInput" class="login__input" type="text" placeholder="Username" value="">
+        <p id="form-errorusername"></p>
+      </div>
+      <div class="login__e-mail">
+        <h3 class="login__h3"><input id="formMailInput" class="login__input" type="email" placeholder="E-mail"></h3>
+        <p id="form-errormail"></p>
+      </div>
+      <div class="login__password">
+        <input id="formPassInput1" class="login__input" type="password" placeholder="Password"><br>
+        <input id="formPassInput2" class="login__input" type="password" placeholder="Type Your Password Again">
+        <p id="form-errorpassword"></p>
+      </div>
+      <div class="login__submit">
+        <input onsubmit="return myFunction()" id="formSubmit" class="login__input login__button" type="submit" value="Submit">
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
 <nav class="nav">
   <div id="nav-right-menu" class="nav__container">
     <div class="nav__row">
@@ -150,5 +175,6 @@
     </div>
 </footer>
 <script src="./js/menu.js"></script>
+<script src="./js/formvalidation.js"></script>
 </body>
 </html>
