@@ -26,25 +26,25 @@ const submit = document.getElementById("formSubmit").addEventListener("click", f
    let passValue2 = formPass2.value
     if(userValue == ""){
         event.preventDefault()
-        console.log("Please write your name")
+        alert("Please write your name")
         return false;
     }
     else if(mailValue == ""){
         event.preventDefault()
-        console.log("Please write your email")
+        alert("Please write your email")
         return false;
     }
     else if(passValue1 ==""){
         event.preventDefault()
-        console.log("Please write a valid password")
+        alert("Please write a valid password")
     }
     else if(passLegth<10){
         event.preventDefault(
-        console.log("write 10 char min")
+        alert("write 10 char min")
         )
     }
     else if(passValue2 !== passValue1){
         event.preventDefault()
-        console.log("Please retype your password")
+        alert("Please retype your password")
     }
 })
