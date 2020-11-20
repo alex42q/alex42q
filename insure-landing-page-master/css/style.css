@@ -192,12 +192,44 @@
     height: 11vh; }
     .nav__link {
       display: none; }
+    .nav__toggle {
+      color: red; }
     .nav__menu-icon {
       display: flex;
       visibility: visible;
-      margin: 1.2rem auto; }
+      margin: 1.5rem auto;
+      z-index: 10; }
     .nav__svg {
       margin: 2rem -1rem; }
+  .li-toggle {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .toggle-nav {
+    color: white;
+    transition: 0.5s ease-in;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: row; }
+  .nav-right-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    width: 100vw;
+    height: 600vh;
+    position: absolute;
+    z-index: 105; }
+  .toggle-ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    margin-right: 6rem;
+    font-size: 0.8rem; }
   .header {
     height: 130vh; }
     .header__row {
