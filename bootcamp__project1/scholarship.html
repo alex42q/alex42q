@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/scholarship.css">
-    <title>Hunt a Scholarship </title>
+    <title>Student Sign Up</title>
 </head>
 <body>
     <div class="header">
+        <i id="minus" class="menu__icon fas fa-minus fa-2x"></i>
+        <i id="bars" class="menu__icon__bar fas fa-bars fa-2x"></i>
         <div class="header__container">
             <div class="header__navbar-container">
                 <div class="icon__container">
                     <i class="header__icon fas fa-book-reader fa-3x"></i>
                 </div>
-                <div class="header__navbar">
-                <ul class="header__ul">
+                <div id="header__navbar" class="header__navbar">
+                <ul id="header__ul" class="header__ul">
                     <li class="header__li"><a class="header__link" href="./index.html">Home</a></li>
-                    <li class="header__li"><a class="header__link" href="#courses">Cources</a></li>
+                    <li class="header__li"><a class="header__link" href="./index.html">Cources</a></li>
                     <li class="header__li"><a class="header__link" href="./trainer.html">Be a Trainer</a></li>
-                    <li class="header__li"><a class="header__link" href="#about">About School</a></li>
-                    <li class="header__li"><a class="header__link header__active" href="./scholarship.html">Hunt a Scholarship</a></li>
+                    <li class="header__li"><a class="header__link" href="./index.html">About School</a></li>
+                    <li class="header__li"><a class="header__active header__link" href="#">Hunt your scholarship</a></li>
                 </ul>
             </div>
             </div>
         </div>
         <div class="header__text-container">
-            <h1 class="header__h1">Hunt your Scholarship and win a free course</h1>
+            <h1 class="header__h1">Hunt a schoolarship with a assingment</h1>
             <p class="header__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat, <br>temporibus eaque a provident accusantium animi recusandae aut deleniti aliquam exercitationem illum hic maxime, similique voluptatem dolorum rem voluptate qui!</p>
         </div>
     </div>
 
-    <form action="get">
+    <form name="Form">
         <div class="form__top-text">
-            <h4 class="form__h4">Assignment Form</h4>
+            <h4 id="text" class="form__h4">Hunt your schoolarship</h4>
         </div>
-        <div class="form__firstLast">
-        <input class="form__input" type="text" placeholder="Title">
-        <input class="form__input" type="datetime" placeholder="subDateTime">
+        <div id="form__firstLast" class="form__firstLast">
+        <input id="title" class="form__input" type="text" placeholder="Title" required>
+        <input id="description" class="form__input" type="text" placeholder="Description" required>
         </div>
-        <div class="form__sub">
-        <input class="form__input sub" type="text" placeholder="Description">
+        <div id="form__sub" class="form__sub">
+            <h5 class="form__sub-birth">Date And Time</h5>
+        <input id="dateAndTime" class="form__input sub" type="datetime" placeholder="Date and Time" required>
         </div>
+        <h1 class="post__h1" id="post__h1"></h1>
+        <h1 class="post__h1" id="post__h2"></h1>
+        <h1 class="post__h1" id="post__h3"></h1>
+        <h1 class="post__h1" id="post__h4"></h1>
+        <h1 class="post__h1" id="post__h5"></h1>
+        <h1 class="post__h1" id="post__h6"></h1>
         <br>
-        <div class="form__oral-mark">
-            <input class="form__input" type="text" placeholder="Oral Mark">
-            <input class="form__input" type="text" placeholder="Total Mark">
+        <div class="form__oral-marks">
+            <p>Oral Marks</p>
+            <input id="oral" class="oral-input" type="number" max="80" min="0">
+            <p>Total Marks</p>            
+            <input id="total"  class="mark-input"type="number" min="20" max="80">
         </div>
     <div class="form__button-signup">
-        <button class="form__button"><p class="button__p">Sign Up</p></button>
+        <button type="button" onclick="Title.scholarFunction()" id="btn" class="form__button"><p id="btn_p" class="button__p">Add</p></button>
+        <button id="reset" type="reset" class="form__button" onclick="reset()">Reset</button>
+        <h4 id="resutlH5"></h4>
     </div>
     </form>
 
     <!---------------------Scripts------------------------------->
-<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+
+    <script src="./js/scholarship.js"></script>
+    <script src="./js/responsive_menu.js"></script>
+<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
 </body>
 </html>

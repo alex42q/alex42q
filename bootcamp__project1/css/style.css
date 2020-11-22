@@ -8,12 +8,40 @@ html{
     scroll-behavior: smooth;
 }
 
+.menu__icon{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: 100;
+   margin: 2rem 2rem;
+   cursor: pointer;
+}
+
+.menu__icon__bar{
+    display: none;
+    opacity: 0;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: -100;
+   margin: 2rem 2rem;
+   position: fixed;
+   cursor: pointer;
+}
+
 .sub{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     height: 340vh;
     width: 99vw;
     position: absolute;
-    display: none;
+    
 }
 
 .sub__card{
@@ -77,10 +105,23 @@ html{
     justify-content: center;
 }
 
+.sub__button2{
+    display: none;
+    margin-top: 1rem;
+    width: 50%;
+    border-style: none;
+    background: white;
+    border:1px solid white;
+    color: blue;
+    border-radius: 10px;
+}
+
+
 
 .header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
     height: 70vh;
+    width: 100%;
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -88,7 +129,7 @@ html{
 }
 
 .header__active{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid green;
 }
 
 .header__navbar-container{
@@ -96,10 +137,16 @@ html{
 }
 
 .header__navbar{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-    width: 100%;
+    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    float: left;
+    margin: auto auto;
 }
 
 
@@ -121,9 +168,11 @@ html{
 }
 
 .header__link{
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 3rem;
     font-family: 'Concert One', cursive;
 }
 
@@ -219,9 +268,10 @@ html{
 }
 
 .main__right-img{
-    width: 250px;
+    width: 200px;
     margin-left: 3rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .main__left-img{
@@ -443,7 +493,7 @@ html{
 }
 
 .enroll{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
     background-position: bottom;
     background-size: cover;
     object-fit: cover;
@@ -469,15 +519,25 @@ html{
     background: none;
     margin: 1rem auto;
     border-style: none;
-    border-bottom: 3px solid blue;
+    border-bottom: 4px solid blue;
     color: whitesmoke;
+    font-size: 1.5rem;
 }
 
 .enroll__button{
+    width: 30%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    background-color: aqua;
     border-style: none;
-    background: none;
-    border-bottom: 3px solid blue;
-    color: whitesmoke;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+.enroll__link{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .footer{
@@ -526,10 +586,6 @@ html{
     color: grey;
 }
 
-.footer__email{
-    color: whitesmoke;
-}
-
 .footer__icon{
     background-color: rgb(104, 104, 211);
 }
@@ -567,4 +623,224 @@ html{
     margin:2rem 2rem;
 }
 
+
+@media Screen and (max-width:1299px){    
+
+    .menu__icon{
+        display: flex;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: 100;
+       margin: 2rem 2rem;
+    }
+
+    .menu__icon__bar{
+        display: none;
+        opacity: 0;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: -100;
+       margin: 2rem 2rem;
+       position: absolute;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header__navbar{
+        display: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        float: left;
+        margin: auto auto;
+        
+    }
+
+    .header__ul{
+        flex-direction: column;
+        float: left;
+        margin: auto auto;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .main__top_p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .main__h5, .main__top_h1, .main__h1, .main__h2, .main__p1, .main__p2{
+        text-align: center;
+        margin: 1.4rem auto;
+    }
+
+    .main__container-1{
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main__container-2{
+        margin-top: 2rem;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;       
+        flex-wrap: wrap;
+        margin: auto auto;
+    }
+
+    .stats{
+        margin: auto auto;
+        margin-top: 2rem;
+    }
+
+    .stats__container{
+        margin: auto auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .stats__row{
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .stats__column{
+        margin: auto auto;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses{
+        margin: auto auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .courses__container{
+        margin: auto auto;
+        flex-direction: column;
+    }
+
+    .courses__row{
+        flex-direction: column;
+    }
+
+    .courses__h3{
+        margin-top: 1rem;
+    }
+
+    .courses__img{
+        margin-top: 1rem;
+    }
+
+   
+    .plan__card{
+        width: 100%;
+        margin: auto auto;
+        margin-top: 1rem;
+    }
+    .plan__container{
+        margin: auto auto;
+        flex-direction: column;
+    }
+
+    .plan__row1, .plan__row2, .plan__row3{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .enroll{
+        margin: auto auto;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .enroll__form{
+        width: 100%;
+        margin: auto auto;
+        
+    }
+
+    .footer{
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .footer__row{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__row2{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__column{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__column-1{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    
+    .footer__column-2{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .sub{
+        display: none;
+    }
+}
 

@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="header">
+        <i id="minus" class="menu__icon fas fa-minus fa-2x"></i>
+        <i id="bars" class="menu__icon__bar fas fa-bars fa-2x"></i>
         <div class="header__container">
             <div class="header__navbar-container">
                 <div class="icon__container">
                     <i class="header__icon fas fa-book-reader fa-3x"></i>
                 </div>
-                <div class="header__navbar">
-                <ul class="header__ul">
+                <div id="header__navbar" class="header__navbar">
+                <ul id="header__ul" class="header__ul">
                     <li class="header__li"><a class="header__link" href="./index.html">Home</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Cources</a></li>
-                    <li class="header__li"><a class="header__link" href="#">Be a Trainer</a></li>
-                    <li class="header__li"><a class="header__link" href="#">About School</a></li>
+                    <li class="header__li"><a class="header__link" href="./index.html">Cources</a></li>
+                    <li class="header__li"><a class="header__link" href="./trainer.html">Be a Trainer</a></li>
+                    <li class="header__li"><a class="header__link" href="./scholarship.html">About School</a></li>
                 </ul>
             </div>
             </div>
@@ -29,43 +31,42 @@
         </div>
     </div>
 
-    <form onsubmit="return false;">
+    <form name="Form">
         <div class="form__top-text">
-            <h4 class="form__h4">Hello student!! Enroll to your favourite course</h4>
+            <h4 id="text" class="form__h4">Hello student!! Enroll to your favourite course</h4>
         </div>
-        <div class="form__firstLast">
-        <input id="FirstNameInput" class="form__input" name="FirstName" type="text" placeholder="Firstname">
-        <input id="LastNameInput" class="form__input" name="LastName" type="text" placeholder="Lastname">
+        <div id="form__firstLast" class="form__firstLast">
+        <input id="FirstnameInput" class="form__input" type="text" placeholder="Firstname" required>
+        <input id="LastNameInput" class="form__input" type="text" placeholder="Lastname" required>
         </div>
-        <div class="form__sub">
-            <h5 id="BirthInput" class="form__sub-birth">Birth Date</h5>
-        <input class="form__input sub" name="Birth" type="date" placeholder="Birth Date">
+        <div id="form__sub" class="form__sub">
+            <h5 class="form__sub-birth">Birth Date</h5>
+        <input id="birth" class="form__input sub" type="date" placeholder="Birth Date" required>
         </div>
+        <h1 class="post__h1" id="post__h1"></h1>
+        <h1 class="post__h1" id="post__h2"></h1>
+        <h1 class="post__h1" id="post__h3"></h1>
+        <h1 class="post__h1" id="post__h4"></h1>
+        <h1 class="post__h1" id="post__h5"></h1>
+        <h1 class="post__h1" id="post__h6"></h1>
         <br>
-        <div class="form__radios">
+        <div id="form__radios" class="form__radios">
         <h5 class="form__fees">Tuition Fees</h5>
-        <input name="FeesCheck1" class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Month</p>
-        <input name="FeesCheck2" class="form__radio" name="Pay" type="radio"><p class="form__p">Pay Per Year</p>
+        <input id="month" class="form__radio" name="Pay" type="radio" value="Month" required><p class="form__p">Pay Per Month</p>
+        <input id="year" class="form__radio" name="Pay" type="radio" value="Year" required><p class="form__p">Pay Per Year</p>
     </div>
-    <div class="form__radios">
-        <input class="form__radio" name="lang" type="checkbox" checked><p class="form__p">Javascript</p>
-        <input class="form__radio" name="lang" type="checkbox"><p class="form__p">C++</p>
-        <input class="form__radio" name="lang" type="checkbox"><p class="form__p">Python</p>
-    </div>
-    <div class="form__acceptAndCheck">
-        <input type="checkbox"><p class="p__check"> I accept the Terms of Use & Privacy Policy.</p>
+    <div id="form__accept" class="form__acceptAndCheck">
+        <input id="checkbox" type="checkbox"><p class="p__check" required> I accept the Terms of Use & Privacy Policy.</p>
     </div>
     <div class="form__button-signup">
-        <button id="btn" class="form__button" onclick="FirstName.getThings()">
-            <div class="button__p"><p>Sign Up</p><div>
-        </button>
-        <h1 id="h1"></h1>
+        <button type="button" onclick="FirstName.getThings()" id="btn" class="form__button"><p id="btn_p" class="button__p">Sign Up</p></button>
+        <button type="submit" onclick="submitForm()" id="btn2" class="form__button2"><p id="btn_p2" class="button__p"><a  class="button__p" href="./success.html">Are these correct?</a></p></button>
     </div>
     </form>
 
     <!---------------------Scripts------------------------------->
-    <script src="./js/calc.js"></script>
-    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
-
+    <script src="./js/student.js"></script>
+    <script src="./js/responsive_menu.js"></script>
+<script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>  
 </body>
 </html>

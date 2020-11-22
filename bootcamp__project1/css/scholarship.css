@@ -4,9 +4,39 @@
     box-sizing: border-box;
 }
 
+.menu__icon{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: 100;
+   margin: 2rem 2rem;
+   cursor: pointer;
+}
+
+.menu__icon__bar{
+    display: none;
+    opacity: 0;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: -100;
+   margin: 2rem 2rem;
+   position: fixed;
+   cursor: pointer;
+}
+
+
 .header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
     height: 70vh;
+    width: 100%;
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -14,7 +44,7 @@
 }
 
 .header__active{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid green;
 }
 
 .header__navbar-container{
@@ -22,10 +52,16 @@
 }
 
 .header__navbar{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-    width: 100%;
+    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    float: left;
+    margin: auto auto;
 }
 
 
@@ -47,9 +83,12 @@
 }
 
 .header__link{
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 2.8rem;
+    font-family: 'Concert One', cursive;
 }
 
 .header__text-container{
@@ -101,7 +140,7 @@ form{
 }
 
 .form__sub{
-    margin-bottom: 5.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .sub{
@@ -127,14 +166,8 @@ form{
 .form__input{
     border-style: none;
     background-color: rgb(219, 211, 211);
-    height: 250%;
+    height: 5vh;
     text-align: center;
-}
-
-.form__oral-mark {
-    text-align: center;
-    align-items: center;
-    margin-bottom: 3rem;
 }
 
 .form__acceptAndCheck{
@@ -156,15 +189,98 @@ form{
 
 .form__button{
     width: 30%;
-    height: 130%;
-    margin-bottom: 1rem;
+    height: 5vh;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     background-color: aqua;
     border-style: none;
     border: 1px solid aqua;
     border-radius: 5px;
 }
 
+.form__oral-marks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.oral-input{
+    width: 20%;
+}
+
+.mark-input{
+    width: 20%;
+}
+
 .button__p{
-    color: whitesmoke;
-    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media Screen and (max-width:1140px){
+    .menu__icon{
+        display: flex;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: 100;
+       margin: 2rem 2rem;
+    }
+
+    .menu__icon__bar{
+        display: none;
+        opacity: 0;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: -100;
+       margin: 2rem 2rem;
+       position: absolute;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header__navbar{
+        display: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        float: left;
+        margin: auto auto;
+        
+    }
+
+    .header__ul{
+        flex-direction: column;
+        float: left;
+        margin: auto auto;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    form{
+        width: 100%;
+        margin: 5rem auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
 }
