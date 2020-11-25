@@ -3,21 +3,52 @@
   margin: 0;
   box-sizing: border-box; }
 
-body {
+.main {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/saketh-garuda-iKCh4GZy-j0-unsplash.jpg);
   background-size: cover;
   object-fit: cover; }
 
+.main__after {
+  width: 100vw;
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/saketh-garuda-iKCh4GZy-j0-unsplash.jpg);
+  background-size: cover;
+  object-fit: cover; }
+
+.container__dayNight {
+  display: flex;
+  margin: auto 13rem;
+  position: relative;
+  top: 30rem; }
+
+.container__dayNight-after {
+  display: flex;
+  margin: auto 13rem;
+  position: relative;
+  top: 5rem; }
+
+#icon {
+  color: white;
+  margin: auto 1rem; }
+
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  margin-left: 10rem;
+  position: relative;
+  top: 30rem; }
+
+.container-after {
+  display: flex;
+  margin-left: 10rem;
+  position: relative;
+  top: 5rem; }
 
 h1 {
+  font-family: 'Anton', sans-serif;
   color: white;
-  font-size: 200px;
+  font-size: 230px;
   font-weight: bolder; }
 
 .dayContainer {
@@ -25,3 +56,48 @@ h1 {
 
 .d, .month {
   font-size: 150px; }
+
+h2 {
+  font-size: 50px;
+  color: white;
+  font-family: 'Nerko One', cursive; }
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  margin-top: 30rem; }
+
+.button-container__after {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  margin-top: 8rem; }
+
+.button {
+  width: 10em;
+  padding: 1em; }
+
+.footer {
+  display: none; }
+
+.footer__after {
+  background: linear-gradient(#c9c7c7, #fffdfd);
+  display: flex;
+  width: 100vw;
+  height: 40vh; }
+
+.footer__container {
+  padding: 5rem 10rem;
+  display: flex; }
+
+.footer__row {
+  margin-right: 2rem; }
+
+h3 {
+  font-size: 60px;
+  font-family: 'Nerko One', cursive; }
+
+h4 {
+  font-size: 30px;
+  font-family: 'Nerko One', cursive; }
