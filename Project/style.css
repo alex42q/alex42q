@@ -1,0 +1,24 @@
+.btn-primary {
+    background-color: brown;
+    border: black;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}
+
+p{
+ text-align: center;
+
+}
+
+.fab{
+    margin-right: 1rem;
+    color: blue;
+}
+
+
+img{
+    width: 100px;
+    height: 50%;
+}
