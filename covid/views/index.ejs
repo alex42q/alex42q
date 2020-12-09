@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../images/glen-carrie-LfviizMGKaE-unsplash.jpg" type="image/x-icon">
+    <title>Greece Covid Tracker</title>
+</head>
+<body>
+<div class="header">
+    <div class="header__container">
+        <div class="header__texts">
+            <h1 class="header__h1">Greece Covid Live Tracker</h1>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main__container">
+        <div class="main__flag">
+            <img class="main__img" src="../images/tn_gr-flag.gif" alt="" srcset="">
+        </div>
+        <div class="main__population">
+            <h1 class="main__h1">Greece Population:</h1>
+            <h2 class="main__h2"><%= covid %></h2>
+        </div>
+        <div class="main__cases">
+            <h1 class="main__h1-c">Coronavirus Cases:</h1>
+            <h2 class="main__h2"><%= covid2 %></h2>
+        </div>
+        <div class="main__deaths">
+            <h1 class="main__h1-d">Deaths:</h1>
+            <h2 class="main__h2"><%= covid3 %> </h2>
+        </div>
+        <div class="main__recovered">
+            <h1 class="main__h1-rec">Recovered:</h1>
+            <h2 class="main__h2"><%= covid4 %></h2>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+<div class="footer__text">
+    <h4 class="footer__h4">Created By Alexandros Zorbadakis</h4>
+</div>
+</footer>
+</body>
+</html>
