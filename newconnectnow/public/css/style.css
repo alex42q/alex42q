@@ -32,7 +32,7 @@ body {
     position: absolute;
     background: linear-gradient(black, black);
     width: 100vw;
-    height: 317vh;
+    height: 433vh;
     transition: 1s ease-in;
     transition-delay: 1s ease;
     animation: 0.2s ease-in onBody; }
@@ -299,6 +299,11 @@ body {
     font-size: 1.2rem;
     border-radius: 5px;
     font-family: 'Ramabhadra', sans-serif; }
+  .episkepsi__span {
+    font-weight: bolder;
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 4rem; }
 
 .footer {
   background-color: #545669; }
@@ -335,6 +340,10 @@ body {
     text-align: center;
     color: whitesmoke;
     font-family: 'Ramabhadra', sans-serif; }
+  .footer__link {
+    text-decoration: none;
+    color: #9090ff;
+    font-weight: bold; }
 
 span {
   margin-left: 1rem; }
@@ -363,10 +372,23 @@ span {
       justify-content: center;
       margin: 0;
       transition: 1s ease-in; }
+    .nav__link {
+      font-size: 1rem; }
+    .nav__li {
+      margin-top: 6rem; }
+    .nav__list-after {
+      position: absolute;
+      background: linear-gradient(black, black);
+      width: 100vw;
+      height: 1100vh;
+      transition: 1s ease-in;
+      transition-delay: 1s ease;
+      animation: 0.2s ease-in onBody; }
     .nav__ul {
       margin-right: 7rem; }
     .nav__icon {
-      right: 1rem; }
+      right: 1rem;
+      position: fixed; }
     .nav__logo {
       margin: -2rem 1rem; }
     .nav__logo-img {
@@ -441,6 +463,10 @@ span {
     margin: 0px; }
   .footer__li {
     font-size: 1rem; }
+  .footer__link {
+    text-decoration: none;
+    color: #9090ff;
+    font-weight: bold; }
   .span {
     font-size: 1rem; } }
 
@@ -453,7 +479,7 @@ span {
       justify-content: center;
       justify-items: center;
       text-align: center;
-      left: 0.7rem; }
+      left: 6.7rem; }
     .nav__link-after {
       display: flex;
       flex-direction: column;
@@ -462,8 +488,18 @@ span {
       justify-content: center;
       margin: 0;
       transition: 1s ease-in; }
+    .nav__list-after {
+      position: absolute;
+      background: linear-gradient(black, black);
+      width: 100vw;
+      height: 817vh;
+      transition: 1s ease-in;
+      transition-delay: 1s ease;
+      animation: 0.2s ease-in onBody; }
     .nav__ul {
       margin-right: 7rem; }
+    .nav__icon {
+      position: fixed; }
   .header__button {
     width: 80%; }
   .header__button2 {
@@ -544,7 +580,7 @@ span {
       justify-content: center;
       justify-items: center;
       text-align: center;
-      left: 0.7rem; }
+      left: 6.7rem; }
     .nav__link-after {
       display: flex;
       flex-direction: column;
@@ -553,6 +589,16 @@ span {
       justify-content: center;
       margin: 0;
       transition: 1s ease-in; }
+    .nav__list-after {
+      position: absolute;
+      background: linear-gradient(black, black);
+      width: 100vw;
+      height: 817vh;
+      transition: 1s ease-in;
+      transition-delay: 1s ease;
+      animation: 0.2s ease-in onBody; }
+    .nav__icon {
+      position: fixed; }
     .nav__ul {
       margin-right: 7rem; }
   .header__button {

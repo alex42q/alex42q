@@ -48,7 +48,7 @@ body{
         position: absolute;
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
         width: 100vw;
-        height: 317vh;
+        height: 433vh;
         transition: 1s ease-in;
         transition-delay: 1s ease;
         animation: 0.2s ease-in onBody;
@@ -400,6 +400,13 @@ body{
         border-radius: 5px;
         font-family: 'Ramabhadra', sans-serif;
     }
+
+    &__span{
+        font-weight: bolder;
+        color: black;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
 }
 
 .footer{
@@ -454,6 +461,12 @@ body{
         color: whitesmoke;
         font-family: 'Ramabhadra', sans-serif;
     }
+
+    &__link{
+        text-decoration: none;
+        color: rgb(144, 144, 255);
+        font-weight: bold;
+    }
 }
 
 span{
@@ -495,12 +508,32 @@ span{
         transition: 1s ease-in;
     }
 
+    &__link{
+        font-size: 1rem;
+    }
+
+    &__li{
+        margin-top: 6rem;
+    }
+
+    &__list-after{
+        position: absolute;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        width: 100vw;
+        height: 1100vh;
+        transition: 1s ease-in;
+        transition-delay: 1s ease;
+        animation: 0.2s ease-in onBody;
+    }
+
     &__ul {
         margin-right: 7rem;
     }
 
+
     &__icon{
         right: 1rem;
+        position: fixed;
     }
 
     &__logo{
@@ -632,6 +665,12 @@ span{
         &__li{
             font-size: 1rem;
         }
+
+        &__link{
+            text-decoration: none;
+            color: rgb(144, 144, 255);
+            font-weight: bold;
+        }
     }
 
     .span{
@@ -649,7 +688,7 @@ span{
             justify-content: center;
             justify-items: center;
             text-align: center;
-            left: 0.7rem;
+            left: 6.7rem;
         }
     
         &__link-after{
@@ -661,9 +700,23 @@ span{
             margin: 0;
             transition: 1s ease-in;
         }
+
+        &__list-after{
+            position: absolute;
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+            width: 100vw;
+            height: 817vh;
+            transition: 1s ease-in;
+            transition-delay: 1s ease;
+            animation: 0.2s ease-in onBody;
+        }
     
         &__ul {
             margin-right: 7rem;
+        }
+
+        &__icon{
+            position: fixed;
         }
     
      }
@@ -799,7 +852,7 @@ span{
             justify-content: center;
             justify-items: center;
             text-align: center;
-            left: 0.7rem;
+            left: 6.7rem;
         }
     
         &__link-after{
@@ -810,6 +863,21 @@ span{
             justify-content: center;
             margin: 0;
             transition: 1s ease-in;
+        }
+
+        &__list-after{
+            position: absolute;
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+            width: 100vw;
+            height: 817vh;
+            transition: 1s ease-in;
+            transition-delay: 1s ease;
+            animation: 0.2s ease-in onBody;
+        }
+
+        &__icon{
+            position: fixed;
+            
         }
     
         &__ul {
