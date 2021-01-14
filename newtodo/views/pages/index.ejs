@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Todo List</title>
 </head>
-<body>
+<body">
+    <nav class="nav">
+        <%- include("../partial/nav.ejs"); %>
+    </nav>
     <div class="container">
     <form action="/todo" method="POST">
         <div class="container__input">

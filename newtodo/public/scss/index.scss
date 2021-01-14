@@ -13,6 +13,33 @@ body{
     background-size: cover;
 }
 
+.nav{
+
+    background-color: black;
+    
+    &__container{
+        padding: 1.5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__leftSide{
+        display: flex;
+    }
+
+    &__icons{
+        margin-right: 1rem;
+    }
+
+    &__icon{
+        color: white;
+    }
+
+    &__h3{
+        color: blue;
+    }
+}
+
 .container{
 display: flex;
 position: absolute;

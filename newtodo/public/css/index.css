@@ -11,6 +11,21 @@ body {
   background-position: center;
   background-size: cover; }
 
+.nav {
+  background-color: black; }
+  .nav__container {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between; }
+  .nav__leftSide {
+    display: flex; }
+  .nav__icons {
+    margin-right: 1rem; }
+  .nav__icon {
+    color: white; }
+  .nav__h3 {
+    color: blue; }
+
 .container {
   display: flex;
   position: absolute;
