@@ -1,0 +1,24 @@
+.headerContainer{
+    background-color:white;
+    height: 25vh;
+}
+
+.headerRow{
+    align-items: center;
+    text-align: center;
+}
+
+.headerTexts{
+    padding-top: 8vh;
+    font-size: 1.5rem;
+}
+
+.headerP{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.headerSpan{
+    background-color: black;
+    color: white;
+}

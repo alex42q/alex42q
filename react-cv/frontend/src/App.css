@@ -1,0 +1,35 @@
+body{
+  background-color: rgb(250, 248, 248);
+  
+}
+
+.bodyCont{
+padding-top: 5rem;
+display: flex;
+justify-content: center;
+margin: auto 23.3rem;
+
+}
+
+.cvHeader{
+ margin: 2rem 2rem;
+  background-color: white;
+  padding-bottom: 2.5rem;
+  box-shadow: 3px 3px 3px 3px;
+}
+
+@media screen and (max-width:1024px){
+  .bodyCont{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .cvHeader{
+    margin: 0;
+     background-color: white;
+     padding-bottom: 2.5rem;
+     box-shadow: 3px 3px 3px 3px;
+   }
+}

@@ -1,0 +1,28 @@
+.follow{
+    box-shadow: 5px 5px 5px 5px;
+    margin-top: 3rem;
+}
+
+.followHeader{
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+.followH4{
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.followIcons{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+    padding-bottom: 1rem;
+}
+
+.iconf{
+    padding: 1rem 1rem;
+    color: black;
+}

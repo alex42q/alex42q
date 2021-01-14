@@ -1,0 +1,49 @@
+.sub{
+    box-shadow: 5px 5px 5px 5px;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+.subHeader{
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+.subH4{
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.subPar{
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+}
+
+.subInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.subInputText{
+    width: 18vw;
+    height: 5vh;
+}
+
+.subButton{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subButtonInput{
+   background-color: red;
+  width: 18.4vw;
+  height: 5vh;
+  color: white;
+  border-style: none;
+  font-weight: bold;
+}

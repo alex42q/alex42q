@@ -1,0 +1,28 @@
+.popularTopContainer{
+    height: 45vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.popularBody{
+    display: flex;
+    margin-top: 1rem;
+    
+}
+
+.popularImage{
+    justify-content: center;
+    background-image: url(./boxed-water-is-better-6aZp4_KfXT8-unsplash.jpg);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.popularNames{
+    justify-content: center;
+    padding-left: 2rem;
+}

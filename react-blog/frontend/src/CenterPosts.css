@@ -1,0 +1,105 @@
+.centerPostsColumn{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px;
+    padding-bottom:5vh;
+    
+}
+
+
+.centerPostsTopTexts{
+    padding-bottom: 7vh;
+}
+
+.centerPostsH2{
+    padding-top: 2rem;
+}
+
+.centerPostsHr{
+    margin: 2rem 2rem;
+}
+
+.centerPostsP{
+    padding-top: 1rem;
+}
+
+.centerPostsImage{
+    background-image: url(./christian-grab-AygJgCM_vto-unsplash.jpg);
+    padding-bottom: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.centerPostsTopTexts{
+    text-align: center;
+}
+
+.centerPostsBottom{
+    padding: 2rem 2rem;
+}
+
+.centerPostsButtons{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 2rem;
+    justify-items: center;
+}
+
+.centerPostsLike{
+    display: flex;
+    border: 1px solid black;
+    min-width: 6vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.centerPostsH5, .centerPostsIcon, .centerPostsH5r{
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.centerPostsReplies{
+    display: flex;
+    border: 1px solid black;
+    background-color: black;
+    min-width: 6vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.centerPostsH5r{
+    color: white;
+}
+
+.centerPostsComments{
+    display: flex;
+    margin: 2rem 2rem;
+}
+
+.centerPostsUserImage{
+    background-image: url(./christian-grab-AygJgCM_vto-unsplash.jpg);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.centerPostsNameCont{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+
+.centerPostsName{
+    padding-top: 1rem;
+}

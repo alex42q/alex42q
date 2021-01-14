@@ -1,0 +1,18 @@
+<div class="showPosts-container">
+    <% for(posts of post){%>
+    <div class="showPosts__card">
+        <div class="showPosts__name">
+            <div class="showPosts__avatar">
+                <img class="container__profile-card-img" src="/images/<%= image.url %>" alt="" srcset="">
+            </div>
+            <div class="showPosts__flname">
+                <h3 class="showPosts__first"><%= posts.firstname %></h3>
+                <h3 class="showPosts__last"><%= posts.lastname %></h3>
+            </div>
+        </div>
+        <div class="showPosts__desc">
+            <h4 class="showPosts__h4"><%= posts.description %></h4>
+        </div>
+    </div>
+    <%} %>
+</div>

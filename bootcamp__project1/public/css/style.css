@@ -1,0 +1,846 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menu__icon{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: 100;
+   margin: 2rem 2rem;
+   cursor: pointer;
+}
+
+.menu__icon__bar{
+    display: none;
+    opacity: 0;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    float: right;
+   z-index: -100;
+   margin: 2rem 2rem;
+   position: fixed;
+   cursor: pointer;
+}
+
+.sub{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    height: 340vh;
+    width: 99vw;
+    position: absolute;
+    
+}
+
+.sub__card{
+    width: 40%;
+    height: 20%;
+    box-shadow:5px 3px 4px rgb(129, 148, 233);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/jessica-ruscello-OQSCtabGkSY-unsplash.jpg);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+
+.sub__text{
+    text-align: center;
+}
+
+.sub__h1{
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.sub__p{
+    color: whitesmoke;
+}
+
+.sub__input{
+    margin-top: 1rem;
+    border-style: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: whitesmoke;
+}
+
+.sub__button{
+    margin-top: 1rem;
+    width: 50%;
+    border-style: none;
+    background: white;
+    border:1px solid white;
+    color: blue;
+    border-radius: 10px;
+}
+
+.sub__icon{
+    color: white;
+}
+
+.sub__body{
+    text-align: center;
+}
+
+.sub__button-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.sub__button2{
+    display: none;
+    margin-top: 1rem;
+    width: 50%;
+    border-style: none;
+    background: white;
+    border:1px solid white;
+    color: blue;
+    border-radius: 10px;
+}
+
+
+
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header__active{
+    border-bottom: 2px solid green;
+}
+
+.header__navbar-container{
+    display: flex;
+}
+
+.header__navbar{
+    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    float: left;
+    margin: auto auto;
+}
+
+
+.header__icon{
+    display: flex;
+    color: white;
+    margin: 1.5rem 2rem;
+    justify-content: flex-start;
+}
+
+.header__ul{
+    display: flex;
+    margin: auto 10rem;
+}
+
+.header__li{
+    list-style: none;
+    margin: 2rem 2rem;
+}
+
+.header__link{
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Concert One', cursive;
+}
+
+.header__text-container{
+    text-align: center;
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.header__h1{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Rokkitt', serif;
+}
+
+.header__p{
+    margin-top: 1rem;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-family: 'Rokkitt', serif;
+}
+
+
+.main{
+    margin-top: 4rem;
+}
+
+.main__text-top{
+    text-align: center;
+}
+
+
+.main__top_p{
+    color: gray;
+    font-family: 'Rokkitt', serif;
+}
+.main__container-1{
+    display: flex;
+    margin:5rem 25rem;
+    justify-content: center;
+}
+
+.main__container-2{
+    display: flex;
+    margin: 5rem 25rem;
+}
+
+.main__button{
+    width: 100px;
+    color: black;
+    margin-top: 1rem;
+    border: none;
+    border-style: none;
+    background-color: white;
+    border-bottom: 2px solid orange;
+    font-family: 'Rokkitt', serif;
+}
+
+.main__h5{
+    color: orange;
+    font-family: 'Rokkitt', serif;
+}
+
+.main__top_h1{
+    font-family: 'Concert One', cursive;
+}
+
+.main__h1{
+    font-family: 'Concert One', cursive;
+}
+.main__h2{
+    font-family: 'Concert One', cursive;
+}
+
+.main__p1{
+    font-family: 'Rokkitt', serif;
+}
+
+.main__p2{
+    font-family: 'Rokkitt', serif;
+}
+
+.main__left-side{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.main__right-side{
+    display: flex;
+    flex: 1;
+}
+
+.main__right-img{
+    width: 200px;
+    margin-left: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main__left-img{
+    width: 250px;
+    margin-right: 3rem;
+    border-radius: 50%;
+}
+
+.stats__container{
+    background: linear-gradient(rgba(3, 8, 1, 0.9), rgba(0, 0, 0, 0.9));
+    background-attachment: fixed;
+}
+.stats__row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.stats__column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15vw;
+    margin-top: 1.3rem;
+    margin: auto auto;
+    height: 23vh;
+    margin-bottom: 2rem;
+}
+
+.stats__icon-and-text{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.stats__icon{
+    margin-left: 1rem;
+    color: rgb(44, 148, 189);
+}
+
+.stats__hr{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: rgb(44, 148, 189);
+}
+
+.stats__h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.stats__h3-2{
+    margin-top: 1.3rem;
+    color: rgb(44, 148, 189);
+}
+
+.stats__h4{
+    color: rgba(219, 212, 212, 0.945);
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+}
+
+.courses{
+    margin-top: 3rem;
+}
+
+.courses__h1{
+    font-family: 'Concert One', cursive;
+}
+
+.courses__texts-container{
+    text-align: center;
+}
+
+.courses__container{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.courses__row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.courses__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+}
+
+.courses__img{
+    width: 350px;
+    border-radius: 50%;
+}
+
+.courses__h3{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.courses__p{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.plan{
+    margin-top: 3rem;
+}
+
+.plan__top-texts{
+    text-align: center;
+}
+
+.plan__h1{
+    font-family: 'Concert One', cursive;
+}
+
+.plan__container{
+    display: flex;
+    margin: 1rem 5rem;
+    justify-content: center;
+    
+}
+
+.plan__row1{
+    display: flex;
+}
+.plan__row2{
+    display: flex;
+}
+.plan__row3{
+    display: flex;
+}
+
+.plan__card{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    box-shadow: 1px 1px 4px ;
+    margin-left: 3rem;
+}
+
+
+.plan__column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.plan__card-top{
+    text-align: center;
+}
+
+.plan__card-bottom{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.plan__main-text{
+    margin-top:1rem;
+}
+
+.plan__main-column{
+    display:flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.plan__h5{
+    margin-left: 0.5rem;
+    border-bottom: blue 3px solid;
+    font-family: 'Karla', sans-serif;
+    font-size:1.3rem;
+}
+
+.plan__h2{
+    font-family: 'Karla', sans-serif;
+    font-size:2.3rem;
+}
+
+.plan__icon{
+    color: blue;
+}
+
+.plan__button-sec{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.plan__button{
+    width: 70%;
+    height: 140%;
+    margin-bottom: 1rem;
+    background-color: blue;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.plan__link{
+    text-decoration: none;
+}
+
+.plan__p{
+    font-family: 'Karla', sans-serif;
+}
+
+.plan__p-button{
+    color: white;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+.enroll{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../images/erika-fletcher-MZxqc6n9qCw-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin-top: 4rem;
+    text-align: center;
+}
+.enroll__form{
+    margin-top: 2rem;
+}
+
+.enroll__h1{
+    color: white;
+    font-family: 'Concert One', cursive;
+}
+
+.enroll__form{
+
+    margin: auto 36rem;
+}
+
+.enroll__input{
+    background: none;
+    margin: 1rem auto;
+    border-style: none;
+    border-bottom: 4px solid blue;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.enroll__button{
+    width: 30%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    background-color: aqua;
+    border-style: none;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+.enroll__link{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.footer{
+    background: linear-gradient(rgba(3, 8, 1, 0.9), rgba(0, 0, 0, 0.9));
+
+}
+
+.footer__container{
+    display: flex;
+}
+
+.footer__row{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer__column{
+    margin: auto 3rem;
+}
+
+.footer__h3{
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.footer__h3-s{
+    color: whitesmoke;
+    margin-top: 2.5rem;
+}
+
+.footer__email{
+    border-style: none;
+    background: none;
+    border-bottom:2px solid rgb(104, 104, 211); ;
+}
+
+.footer__h4{
+    color: rgb(104, 104, 211);
+    margin-top: 1rem;
+}
+
+.footer__p{
+    margin-top: 0.5rem;
+    color: grey;
+}
+
+.footer__icon{
+    background-color: rgb(104, 104, 211);
+}
+.footer__hr{
+    margin-top: 1rem;
+}
+
+.footer__container-2{
+    display: flex;
+    width: 100%;
+}
+
+.footer__row2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footer__column-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.footer__column-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.footer__h4-2{
+    color: white;
+    text-align: center;
+    margin:2rem 2rem;
+}
+
+
+@media Screen and (max-width:1299px){    
+
+    .menu__icon{
+        display: flex;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: 100;
+       margin: 2rem 2rem;
+    }
+
+    .menu__icon__bar{
+        display: none;
+        opacity: 0;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+        color: white;
+        float: right;
+       z-index: -100;
+       margin: 2rem 2rem;
+       position: absolute;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header__navbar{
+        display: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        float: left;
+        margin: auto auto;
+        
+    }
+
+    .header__ul{
+        flex-direction: column;
+        float: left;
+        margin: auto auto;
+        justify-items: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .main__top_p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .main__h5, .main__top_h1, .main__h1, .main__h2, .main__p1, .main__p2{
+        text-align: center;
+        margin: 1.4rem auto;
+    }
+
+    .main__container-1{
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main__container-2{
+        margin-top: 2rem;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;       
+        flex-wrap: wrap;
+        margin: auto auto;
+    }
+
+    .stats{
+        margin: auto auto;
+        margin-top: 2rem;
+    }
+
+    .stats__container{
+        margin: auto auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .stats__row{
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .stats__column{
+        margin: auto auto;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses{
+        margin: auto auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .courses__container{
+        margin: auto auto;
+        flex-direction: column;
+    }
+
+    .courses__row{
+        flex-direction: column;
+    }
+
+    .courses__h3{
+        margin-top: 1rem;
+    }
+
+    .courses__img{
+        margin-top: 1rem;
+    }
+
+   
+    .plan__card{
+        width: 100%;
+        margin: auto auto;
+        margin-top: 1rem;
+    }
+    .plan__container{
+        margin: auto auto;
+        flex-direction: column;
+    }
+
+    .plan__row1, .plan__row2, .plan__row3{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .enroll{
+        margin: auto auto;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .enroll__form{
+        width: 100%;
+        margin: auto auto;
+        
+    }
+
+    .footer{
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .footer__row{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__row2{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__column{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__column-1{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    
+    .footer__column-2{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .sub{
+        display: none;
+    }
+}
+

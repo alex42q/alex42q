@@ -1,0 +1,22 @@
+{
+  "name": "alex42q",
+  "version": "1.0.0",
+  "description": "<!--\r **alex42q/alex42q** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex42q/alex42q.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex42q/alex42q/issues"
+  },
+  "homepage": "https://github.com/alex42q/alex42q#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

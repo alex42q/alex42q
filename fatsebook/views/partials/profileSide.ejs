@@ -1,0 +1,40 @@
+<div class="container__profile-container">
+    <div class="container__profile-card">
+        <div class="container__profile-card-header">
+            <h2 class="container__profile-h2">My Profile</h2>
+        </div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="container__profile-card-image">
+            <img id="img" class="container__profile-card-img" src="/images/<%= image.url %>" alt="" srcset="">
+        </div>
+        <input type="file" accept="image/*" name="photo">
+        <input class="container__img-upload" type="submit" value="upload">
+        <input type="text" name="name" placeholder="bale onoma">
+    </form>
+        <hr class="container__profile-card-hr">
+        <div class="container__profile-card-top">
+            <div class="container__profile-card-icon">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="container__profile-card-name">
+                <h5 class="container__profile-card-h5"><%= user.firstname %> <%= user.lastname %></h5>
+            </div>
+        </div>
+        <div class="container__profile-card-middle">
+            <div class="container__profile-card-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="container__profile-card-addres">
+                <h5 class="container__profile-card-h5"><%= user.address %>, GR</h5>
+            </div>
+        </div>
+        <div class="container__profile-card-bottom">
+            <div class="container__profie-card-birth">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="container__profile-card-date">
+                <h5 class="container__profile-card-h5"><%=user.month%> <%= user.day %>, <%= user.year %></h5>
+            </div>
+        </div>
+    </div>
+</div>

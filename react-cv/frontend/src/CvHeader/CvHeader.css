@@ -1,0 +1,33 @@
+.cvheader{
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cvrow{
+    display: flex;
+
+}
+
+.cvtitle{
+    padding: 1rem 1rem;
+}
+
+.cvcolumn{
+    padding: 1rem 1rem;
+}
+
+.namesiteH4{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cvhr{
+    border-style: ridge;
+}
+
+.namesiteSpan{
+    color: grey;
+    font-weight: lighter;
+}

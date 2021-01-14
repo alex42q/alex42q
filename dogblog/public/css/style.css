@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #e2dede; }
+
+.body-container {
+  margin: 2rem 30rem; }
+
+.nav__container {
+  background-color: black;
+  width: 100%; }
+
+.nav__row {
+  display: flex;
+  justify-content: space-between; }
+
+.nav__logo {
+  padding: 2rem; }
+
+.nav__navigation {
+  padding: 2rem; }
+
+.nav__ul {
+  display: flex; }
+
+.nav__li {
+  list-style: none; }
+
+.nav__link {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 2rem;
+  font-size: 1.5rem; }
+
+.nav__active {
+  border-bottom: 1px solid whitesmoke; }
+
+.nav__h1 {
+  color: white; }
+
+.posts {
+  display: flex;
+  flex-direction: column; }
+
+.posts-center {
+  display: flex; }
+
+.top-posts {
+  display: flex;
+  flex-direction: column; }
+  .top-posts__container {
+    display: flex; }
+  .top-posts__row {
+    display: flex; }
+  .top-posts__column {
+    background: linear-gradient(rgba(255, 253, 253, 0.959), rgba(0, 0, 0, 0));
+    max-width: 30%;
+    padding-bottom: 5rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px;
+    margin: 2rem 2rem; }
+  .top-posts__img {
+    background-image: url(../images/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg);
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover; }
+
+.aside {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  flex-direction: column; }
+  .aside__container {
+    display: flex; }
+  .aside__row {
+    display: flex; }
+  .aside__column {
+    background: linear-gradient(rgba(255, 253, 253, 0.959), rgba(0, 0, 0, 0));
+    width: 30%;
+    padding-bottom: 10rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px;
+    margin: 2rem 2rem; }
+
+.aside2 {
+  width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute; }
+  .aside2__container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; }
+  .aside2__row {
+    display: flex;
+    justify-content: flex-end; }
+  .aside2__column {
+    background: linear-gradient(rgba(255, 253, 253, 0.959), rgba(0, 0, 0, 0));
+    width: 20%;
+    padding-bottom: 8rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px;
+    margin: 2rem 2rem; }
+
+.footer {
+  background-color: black;
+  height: 5rem; }
+  .footer__container {
+    text-align: center;
+    color: white; }
+  .footer__h1 {
+    padding-top: 2rem; }

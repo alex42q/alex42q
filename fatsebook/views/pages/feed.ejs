@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Wall</title>
+</head>
+<body>
+
+
+    <div class="showPosts-container">
+        <%for(posts of post){ %>
+        <div class="showPosts__card">
+            <div class="showPosts__name">
+                <div class="showPosts__avatar">
+                    <img class="container__profile-card-img" src="https://www.w3schools.com/w3images/avatar3.png" alt="" srcset="">
+                </div>
+                <div class="showPosts__flname">
+                    <h3 class="showPosts__first"><%=posts.firstname %></h3>
+
+                    <h3 class="showPosts__last"></h3>
+                   
+                </div>
+            </div>
+            <div class="showPosts__desc">
+                <h4 class="showPosts__h4"><%= posts.description %></h4>
+            </div>
+        </div>
+        <%} %>
+    </div>
+</body>
+</html>

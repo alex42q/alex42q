@@ -1,0 +1,32 @@
+.footer{
+    margin-top: 0.6rem;
+    background-color: grey;
+    padding-bottom: 5vh;
+    width: 100%;
+}
+
+.footerButton{
+    padding: 2rem 2rem;
+}
+
+.footerButtonTop{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10vw;
+}
+
+.footerH4, .icon{
+    color: white;
+    padding-right: 1rem;
+}
+
+.footerCopy{
+    padding:1rem 2rem;
+}
+
+.footerH4Copy{
+    font-size: 1.2rem;
+}

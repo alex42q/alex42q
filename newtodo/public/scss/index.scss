@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(rgba(40,57,101,.9), rgba(40,57,101,.9)), url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+display: flex;
+position: absolute;
+
+left: 50%;
+flex-direction: column;
+top:50%;
+transform: translate(-50%, -50%);
+
+    &__plus{
+        position: relative;
+        right: 2.4rem;
+        top: 0.4rem;    
+    }
+
+
+    &__tickNdelete{
+        display: flex;
+    }
+
+
+    &__btn{
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+}
+
+
+
+
+input{
+    position: relative; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+    padding-right: 10rem;
+    border-radius: 5%;
+    font-size: 0.9rem;
+    }
+
+
+
+
+.newTodo{
+    &__InputAndIcons{
+        display: flex;
+    }
+
+    &__tick1{
+        color: green;
+        position: relative;
+        left: 0.3rem;
+    }
+
+    &__delete{
+        color: red;
+        left: 2rem;
+        position: relative;
+    }
+
+    &__input{
+        position: relative; 
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem; 
+        padding-right: 10rem;
+        border-radius: 5%;
+        font-size: 0.9rem;
+        }
+
+    &__inputDelete{
+        position: relative; 
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem; 
+        padding-right: 10rem;
+        border-radius: 5%;
+        font-size: 0.9rem;
+        text-decoration: line-through
+        }
+
+
+}

@@ -1,0 +1,10 @@
+<div class="w3-row-padding w3-padding-16 w3-center">
+  <% posts.forEach(function(post) { %>
+<div class="w3-quarter">
+    <img src="<%= post.image %>"  alt="Sandwich" style="width:100%">
+    <h3><%= post.name %> </h3>
+    <p><%= post.desc %></p>
+  </div>
+  <% }); %>
+</div>
+

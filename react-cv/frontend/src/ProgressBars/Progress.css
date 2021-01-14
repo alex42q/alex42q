@@ -1,0 +1,27 @@
+.progress{
+    display: flex;
+    margin: 1rem 1rem;
+}
+
+.progressProg{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 2rem;
+}
+
+.progressBar{
+    width: 20rem;
+    height: 2vh;
+    color: black;
+}
+
+@media screen and (max-width:1024px){
+    .progress{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progressBar{
+        width: 30rem;
+    }
+}

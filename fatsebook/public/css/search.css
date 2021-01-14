@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.search__container {
+  display: flex; }
+
+.search__card {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  background: linear-gradient(white, white);
+  width: 20.1%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 10px;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 3px 3px; }
+
+.search__img {
+  width: 100px;
+  border-radius: 90%; }
+
+.search__h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem; }
+
+.search__names {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.search__button {
+  margin-top: 1rem; }
+
+.search__btn {
+  border-style: none;
+  padding: 2px;
+  width: 40%;
+  background-color: #00af26;
+  color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1rem; }

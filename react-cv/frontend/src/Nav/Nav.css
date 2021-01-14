@@ -1,0 +1,31 @@
+
+.nav__ul{
+    display: flex;
+}
+
+.nav__li{
+    list-style: none;
+    padding:2rem;    
+    border-right: 1px dotted black;
+    border-bottom: 2px solid orange;
+    background-color: white;
+}
+
+
+.nav__contact{
+    padding-right:4.7rem;
+}
+
+.nav__link{
+    display: flex;
+    text-decoration: none;
+    padding-left: 1rem;
+    color: black;
+}
+
+.nav__icon{
+    padding-right: 1rem;
+    color: black;
+}
+
+

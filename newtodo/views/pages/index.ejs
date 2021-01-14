@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+    <form action="/todo" method="POST">
+        <div class="container__input">
+            <input id="todo" type="text" name="todo" placeholder="Put your todo">
+            <input type="hidden" name=id>
+        <button type="submit" class="container__btn"><i class="fas fa-plus fa-2x container__plus"></i></button> 
+        </div>
+        <% for(todo of todos) {%>
+    </form>
+    <form action="/remove-todo" method="POST">
+    <div class="newTodo">
+ 
+        <div class="newTodo__InputAndIcons">
+        <input type="hidden" name=id value="<%= todo._id %>">
+    <input id="input" class="newTodo__input" name="todo" readonly type="text" value="<%= todo.todo %>">
+    <div class="container__tickNdelete">
+        <div class="container__delete">
+            <button id="btn" type="submit" class="container__btn"><i class="fas fa-trash-alt fa-2x newTodo__delete"></i></button>
+            
+        </div>
+    </div>
+</div>
+
+</div>
+</form>
+<%}%>
+    </div>
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <script src="/js/borderTodo.js"></script>
+</body>
+</html>
