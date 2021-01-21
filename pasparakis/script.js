@@ -59,7 +59,7 @@ connection.connect(function(err) {
                 response.writeHead(404, {});
                // response.write("You didn't make it!!!!\n");
                 //response.write(Object.values(data0).toString());
-                response.write(`<p>id:${data0.id}</p> <p>Firstname:${data0.firstname}</p> <p>Lastname:${data0.lastname}</p> <p>Telephone: ${data0.telephone}</p> `);
+                response.write(`<p>id:${data0.id}</p> <p>Firstname:${data0.firstname}</p> <p>Lastname:${data0.lastname}</p> <p>Email:${data0.email}</p> <p>Telephone: ${data0.telephone}</p> `);
                 response.end();
             }).listen(8000);
 
