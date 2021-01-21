@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Fatsebook</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-left">
+            <div class="nav__logo-side">
+                <a href="/main"><i class="fas fa-home nav__icon-logo"></i></a>
+                <h2 class="nav__h2">FatseBook</h2>
+            </div>
+            <div class="nav__icons-side">
+                <i class="fas fa-user-alt nav__icon"></i>
+                <i class="fas fa-bell nav__icon"></i>
+                <i class="fas fa-comment-dots nav__icon"></i>
+                <i class="fas fa-newspaper nav__icon"></i>
+                <form action="/search" method="POST">
+                    <button type="submit"><i class="fas fa-search"></i>
+                    </button>
+                <input type="text" name="search">
+            </form>
+            </div>
+            </div>
+            <div class="nav__container__right">
+                <div class="nav__profile-avatar">
+                    <i class="fas fa-user-tie nav__icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container__leftSide">
+            <div class="container__profileImage">
+                <img class="container__profileImg" src="images/avatar3.png">
+                <div class="container__name">
+                    <h3 class="container__name"><%=user.firstname%> <%=user.lastname %></h3>
+                </div>
+            </div>
+            <div class="container__covid">
+                <i class="fas fa-medkit fa-2x container__icon"></i>
+                <h3 class="container__h3">Covid</h3>
+            </div>
+            <div class="container__pages">
+                <i class="fas fa-flag fa-2x container__icon"></i>
+                <h3 class="container__h3">Pages</h3>
+            </div>
+            <div class="container__friends">
+                <i class="fas fa-user-friends fa-2x container__icon"></i>
+                <h3 class="container__h3">Friends</h3>
+            </div>
+        </div>
+        <div class="container__posts-container">
+            <div class="container__posts-card">
+                <div class="container__posts-header">
+                    <h4 class="container__posts-h4">Share your thougths</h4>
+                </div>
+                <form action="/posts" method="POST">
+                <div class="container__posts-post-input">
+                    <input class="container__posts-input" type="text" name="description" placeholder="Write your post...">
+                </div>
+                <div class="container__posts-button">
+                    <button class="container__posts-btn">Post it!</button>
+                </div>
+            </form>
+            </div>
+            <% for(post of posts){%>
+            <div class="showPosts-container">
+                <div class="showPosts__card">
+                    <div class="showPosts__name">
+                        <div class="showPosts__avatar">
+                            <img class="container__profile-card-img" src="https://www.w3schools.com/w3images/avatar3.png" alt="" srcset="">
+                        </div>
+                        <div class="showPosts__flname">
+                            <h3 class="showPosts__first"><%=post.firstname %></h3>
+                            <h3 class="showPosts__last"><%=post.lastname %></h3>
+                           
+                        </div>
+                    </div>
+                    <div class="showPosts__desc">
+                        <h4 class="showPosts__h4"><%=post.description %></h4>
+                    </div>
+                    <div class="showPosts__buttons">
+                    <div class="showPosts__buttonLikes">
+                        <input type="submit" id="likeButton" class="showPosts__btnLike" placeholder="Like" value="Like" name="likes">
+                        <h4 class="showPosts__h1" id="like">0</h4>
+                    </div>
+                    <div class="showPosts__buttonComments">
+                        <button class="showPosts__btnComment">Comment</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <%}%>
+        </div>
+        <div class="container__rightSide">
+            
+        </div>
+    </div>
+    <script src="/js/like.js"></script>
+</body>
+</html>

@@ -25,6 +25,16 @@ body {
     color: white; }
   .nav__h3 {
     color: blue; }
+  .nav__list {
+    display: none; }
+  .nav__listAfter {
+    display: flex; }
+  .nav__li {
+    list-style: none;
+    margin-top: 0.5rem; }
+  .nav__link {
+    text-decoration: none;
+    color: white; }
 
 .container {
   display: flex;
@@ -34,9 +44,9 @@ body {
   top: 50%;
   transform: translate(-50%, -50%); }
   .container__plus {
-    position: relative;
-    right: 2.4rem;
-    top: 0.4rem; }
+    position: absolute;
+    right: 2rem;
+    top: 0.8rem; }
   .container__tickNdelete {
     display: flex; }
   .container__btn {
@@ -56,15 +66,10 @@ input {
 .newTodo__InputAndIcons {
   display: flex; }
 
-.newTodo__tick1 {
-  color: green;
-  position: relative;
-  left: 0.3rem; }
-
 .newTodo__delete {
   color: red;
-  left: 2rem;
-  position: relative; }
+  right: 2rem;
+  position: absolute; }
 
 .newTodo__input {
   position: relative;

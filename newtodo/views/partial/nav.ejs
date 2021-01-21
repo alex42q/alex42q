@@ -1,7 +1,7 @@
 <div class="nav__container">
     <div class="nav__leftSide">
         <div class="nav__icons">
-            <i class="fas fa-clipboard-check nav__icon"></i>
+          <a href="/"><i class="fas fa-clipboard-check nav__icon"></i></a>
         </div>
         <div class="nav__header">
             <h3 class="nav__h3">ToDoList</h3>
@@ -9,7 +9,13 @@
     </div>
     <div class="nav__rightSide">
         <div class="nav__userIcon">
-            <i class="fas fa-user nav__icon"></i>
+            <i id="iconBtn" class="fas fa-user nav__icon"></i>
+        </div>
+        <div id="list" class="nav__list">
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__link" href="/profile">My profile</a></li>
+                <li class="nav__li"><a class="nav__link" href="/logout">Logout</a></li>
+            </ul>
         </div>
     </div>
 </div>

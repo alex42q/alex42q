@@ -1,0 +1,58 @@
+.nav{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+h2,a, .icon{
+    color: white;
+}
+
+span{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 4rem;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.active{
+    border-bottom: 2px solid white;
+}
+
+.icon{
+    margin-left: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

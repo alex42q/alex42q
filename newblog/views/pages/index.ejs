@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>ConnectNow Blog</title>
+</head>
+<body>
+    <nav class="nav">
+     <%- include("../partials/nav.ejs"); %>
+    </nav>
+    <header class="header">
+     <%- include("../partials/header.ejs"); %>
+    </header>
+    <div class="container">
+        <div class="container__leftSide">
+        <%- include("../partials/leftSide.ejs"); %>
+        </div>
+        <div class="container__center">
+        <%- include("../partials/center.ejs"); %>
+        </div>
+        <div class="container__rightSide">
+        <%- include("../partials/rightSide.ejs"); %>
+        </div>
+    </div>
+    <div class="ref"> 
+        <%- include("../partials/refConnect.ejs"); %>
+    </div>
+    <footer class="footer">
+        <%- include("../partials/footer.ejs"); %>
+    </footer>
+</body>
+</html>

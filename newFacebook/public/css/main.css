@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #0341c9; }
+
+.nav__container-left {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; }
+
+.nav__container__right {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.nav__logo-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-right: 3rem; }
+
+.nav__icon {
+  margin-right: 2rem; }
+
+.nav__icon-logo {
+  color: white;
+  margin-right: 1rem; }
+
+.nav__icons-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.nav__h2 {
+  color: white; }
+
+.nav__icon {
+  color: white; }
+
+.container {
+  display: flex;
+  justify-content: space-between; }
+  .container__posts-card {
+    background: linear-gradient(white, white);
+    width: 50vw;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px;
+    margin-top: 1rem; }
+  .container__posts-h4 {
+    font-size: 1.2rem;
+    margin: 1rem; }
+  .container__posts-post-input {
+    margin: 1rem; }
+  .container__posts-input {
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+  .container__posts-button {
+    margin: 1rem; }
+  .container__posts-btn {
+    border-style: none;
+    padding: 5px;
+    width: 10%;
+    background-color: #0020af;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 1rem; }
+  .container__profileImage {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem; }
+  .container__profileImg {
+    max-width: 50px;
+    border-radius: 100%;
+    margin-left: 4.5rem; }
+  .container__covid {
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center; }
+  .container__name {
+    text-align: center;
+    margin-left: 0.3rem; }
+  .container__pages {
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center; }
+  .container__friends {
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center; }
+  .container__icon {
+    color: #0b7eeb; }
+  .container__profile-card-img {
+    width: 100px;
+    border-radius: 100%;
+    margin-bottom: 1rem; }
+
+.showPosts__h1 {
+  margin-left: 0.5rem; }
+
+.showPosts__card {
+  background: linear-gradient(white, white);
+  width: 100%;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  padding: 10px;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 3px 3px; }
+
+.showPosts__name {
+  display: flex; }
+
+.showPosts__flname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.showPosts__first {
+  margin-right: 0.5rem; }
+
+.showPosts__buttons {
+  display: flex;
+  margin-top: 1rem; }
+
+.showPosts__buttonLikes {
+  margin-right: 1rem;
+  margin-top: 0.5rem; }
+
+.showPosts__buttonComments {
+  margin-top: 0.5rem; }
+
+.showPosts__btnLike {
+  border-style: none;
+  padding: 5px;
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 100%;
+  background-color: #0037af;
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.showPosts__btnComment {
+  border-style: none;
+  padding: 5px;
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 100%;
+  background-color: #003daf;
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem; }

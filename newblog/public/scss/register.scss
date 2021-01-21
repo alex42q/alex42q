@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+}
+
+.nav{
+    background-color: black;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 2rem 2rem;
+    }
+
+    &__ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__li{
+        list-style: none;
+        margin-right: 3rem;
+    }
+
+    &__link{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        animation: h1Opacity ease 9s;
+    }
+
+    &__active{
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    &__h1{
+        color: whitesmoke;
+    }
+
+    &__connect{
+        color: green;
+        animation: h1Opacity ease 3s;
+    }
+
+    &__now{
+        color: blue;
+        animation: h1Opacity ease 6s;
+    }
+}
+
+.container{
+    display: flex;
+    
+    &__img{
+        background-image: url(../images/xps-8pb7Hq539Zw-unsplash.jpg);
+        background-size: cover;
+        background-position: top;
+        object-fit: cover;
+        width: 60vw;
+        height: 90.7vh;
+    }
+
+    &__inputSide{
+        z-index: 1000;
+        margin: 8rem 8rem;
+    }
+
+    &__logo{
+        margin-bottom: 1rem;
+    }
+
+    &__h1{
+        color: black;
+    }
+
+    &__connect{
+        color: green;
+        animation: h1Opacity ease 3s;
+    }
+
+    &__now{
+        color: blue;
+        animation: h1Opacity ease 6s;
+    }
+
+    &__btn{
+        padding: 16px;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        border: none;
+        outline: none;
+        background: none;
+        background-color: blue;
+        color: whitesmoke;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+input{
+    padding: 15px;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    width: 20vw;
+}

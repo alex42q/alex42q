@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(196, 196, 196);
+}
+
+
+.nav{
+    background-color: black;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 2rem 2rem;
+    }
+
+    &__ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__li{
+        list-style: none;
+        margin-right: 3rem;
+    }
+
+    &__link{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        animation: h1Opacity ease 9s;
+    }
+
+    &__active{
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    &__h1{
+        color: whitesmoke;
+    }
+
+    &__connect{
+        color: green;
+        animation: h1Opacity ease 3s;
+    }
+
+    &__now{
+        color: blue;
+        animation: h1Opacity ease 6s;
+    }
+}
+
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/nathan-dumlao-kEOLkJksbc8-unsplash.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    height: 90vh;
+
+    &__container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__h1{
+        color: white;
+        font-size: 4rem;
+        animation: h1Opacity ease 11s;
+    }
+    &__h2{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        animation: h1Opacity ease 13s;
+    }
+
+    &__buttonConnect{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        animation: h1Opacity ease 15s;
+    }
+
+    &__btn{
+        border-style: none;
+        background: none;
+        background-color: green;
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+}
+
+.container{
+    display: flex;
+    margin: 3rem 3rem;
+
+    &__leftSideContainer{
+        padding-right: 3rem;
+    }
+
+    &__leftSideCard{
+        background: linear-gradient(rgba(241, 241, 241, 0.897), rgba(241, 241, 241, 0.897));
+        max-width: 50vw;
+        box-shadow: 2px 3px 2px 3px;
+        padding-bottom: 2rem;
+    }
+
+    &__leftSideImage{
+        max-width: 600px;
+    }
+
+    &__leftSideImg{
+        width: 100%;
+        max-height: 40vh;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    &__leftSideHeader{
+        margin-top: 1rem;
+    }
+
+    &__leftSideDescription{
+        margin-top: 1rem;
+    }
+
+    &__leftSideH3{
+        text-align: center;
+    }
+
+    &__leftSideP{
+        text-align: center;
+    }
+
+    &__centerContainer{
+        padding-right: 3rem;
+    }
+
+    &__centerCard{
+        background: linear-gradient(rgba(241, 241, 241, 0.897), rgba(241, 241, 241, 0.897));
+        max-width: 50vw;
+        box-shadow: 2px 3px 2px 3px;
+        padding-bottom: 2rem;
+    }
+    &__centerImage{
+        max-width: 600px;
+    }
+
+    &__centerImg{
+        width: 100%;
+        max-height: 40vh;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    &__centerHeader{
+        margin-top: 1rem;
+    }
+
+    &__centerDescription{
+        margin-top: 1rem;
+    }
+
+    &__centerH3{
+        text-align: center;
+    }
+
+    &__centerP{
+        text-align: center;
+    }
+
+    &__rightSideContainer{
+        padding-right: 3rem;
+    }
+
+    &__rightSideCard{
+        background: linear-gradient(rgba(241, 241, 241, 0.897), rgba(241, 241, 241, 0.897));
+        max-width: 50vw;
+        box-shadow: 2px 3px 2px 3px;
+        padding-bottom: 2rem;
+    }
+    &__rightSideImage{
+        max-width: 600px;
+    }
+
+    &__rightSideImg{
+        width: 100%;
+        max-height: 40vh;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    &__rightSideHeader{
+        margin-top: 1rem;
+    }
+
+    &__rightSideDescription{
+        margin-top: 1rem;
+    }
+
+    &__rightSideH3{
+        text-align: center;
+    }
+
+    &__rightSideP{
+        text-align: center;
+    }
+}
+
+.ref{
+    background-color: rgb(4, 65, 196);
+    padding: 2.5rem;
+
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__icon{
+        color: whitesmoke;
+        margin-right: 2rem;
+    }
+
+    &__iconButton{
+        border-style: none;
+        background-color: none;
+        outline: none;
+    }
+
+    &__input{
+        padding: 5.5px;
+        padding-right: 5rem;
+    }
+
+    &__newsletter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__follow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes headerOpacity{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes h1Opacity{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0%;
+    }
+
+    70%{
+        opacity: 80%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="nav">
+        <%- include("../partials/login/loginNav.ejs"); %>
+    </nav>
+    <div class="container">
+        <div class="container__imageSide">
+            <img  class="container__img">
+        </div>
+        <div class="container__inputSide">
+            <div class="container__card">
+                <div class="container__headerText">
+                    <h2 class="container__h2">Κάνε Σύνδεση</h2>
+                </div>
+                <div class="container__logo">
+                    <h1 class="container__h1"><span class="container__connect">Connect</span><span class="container__now">Now</span>.gr</h1>
+                </div>
+            <form action="/login-form" method="POST">
+            <div class="container__email">
+                <input type="email" class="container__emailInput" name="username" placeholder="Write your email">
+            </div>
+            <div class="container__password">
+                <input type="password" class="container__passwordInput" name="password" id="password" placeholder="Write your password">
+            </div>
+            <div class="container__button">
+                <button type="submit" class="container__btn">Submit</button>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

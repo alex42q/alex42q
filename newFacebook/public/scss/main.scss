@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(3, 65, 201);
+
+    }
+
+    &__container-left{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container__right{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__logo-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-right: 3rem;
+    }
+
+    &__icon{
+        margin-right: 2rem;
+    }
+
+    &__icon-logo{
+        color: white;
+        margin-right: 1rem;
+    }
+
+    &__icons-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__h2{
+        color: white;
+        
+    }
+
+    &__icon{
+        color: white;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    &__posts-card{
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        width: 50vw;
+        padding: 10px;
+        box-shadow: 3px 3px 3px 3px;
+        margin-top: 1rem;
+    }
+
+    &__posts-h4{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    &__posts-post-input{
+        margin: 1rem;
+    }
+
+    &__posts-input{
+        width: 100%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    &__posts-button{
+        margin: 1rem;
+    }
+
+    &__posts-btn{
+        border-style: none;
+        padding: 5px;
+        width: 10%;
+        background-color: rgb(0, 32, 175);
+        color: white;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+    &__profileImage{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    &__profileImg{
+        max-width: 50px;
+        border-radius: 100%;
+        margin-left:4.5rem;
+    }
+
+    &__covid{
+        margin-bottom: 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__name{
+        text-align: center;
+        margin-left: 0.3rem;
+    }
+
+
+    &__pages{
+        margin-bottom: 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__friends{
+        margin-bottom: 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__icon{
+        color: rgb(11, 126, 235);
+    }
+
+    &__profile-card-img{
+        width: 100px;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.showPosts{
+
+    &__h1{
+       
+        margin-left: 0.5rem;
+    }
+
+    &__card{
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 1rem;
+        padding: 10px;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        box-shadow: 3px 3px 3px 3px;
+    }
+
+    &__name{
+        display: flex;
+    }
+
+    &__flname{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__first{
+        margin-right: 0.5rem;
+    }
+
+    &__buttons{
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    &__buttonLikes{
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    &__buttonComments{
+        margin-top: 0.5rem;
+    }
+
+    &__btnLike{
+        border-style: none;
+        padding: 5px;
+        padding-left: 11px;
+        padding-right: 11px;
+        width: 100%;
+        background-color: rgb(0, 55, 175);
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btnComment{
+        border-style: none;
+        padding: 5px;
+        padding-left:11px;
+        padding-right: 11px;
+        width: 100%;
+        background-color: rgb(0, 61, 175);
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(rgba(40,57,101,.9), rgba(40,57,101,.9)), url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+
+    background-color: black;
+    
+    &__container{
+        padding: 1.5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__leftSide{
+        display: flex;
+    }
+
+    &__icons{
+        margin-right: 1rem;
+    }
+
+    &__icon{
+        color: white;
+    }
+
+    &__h3{
+        color: blue;
+    }
+
+    &__list{
+        display: none;
+    }
+
+    &__listAfter{
+        display: flex;
+    }
+
+    &__li{
+        list-style: none;
+        margin-top: 0.5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    &__Cards{
+        min-width: 30%;
+        margin-top: 0.5rem;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        padding: 45px;
+        border-radius: 10px;
+    }
+
+    &__h1{
+        color: white;
+    }
+
+    &__h2{
+        margin-top: 1rem;
+        color: whitesmoke;
+    }
+
+    &__h3{
+        margin-bottom: 0.5rem;
+        color: whitesmoke;
+        font-weight: lighter;
+    }
+
+    &__h4{
+        color: whitesmoke;
+        margin-bottom: 1rem;
+    }
+
+    &__header{
+        margin-bottom: 1rem;
+       
+        font-size: 1.3rem;
+    }
+
+    &__cardHeader{
+       
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__button{
+        margin-bottom: 1rem;
+    }
+
+    &__btn{
+        border-style: none;
+        border: none;
+        background:none;
+        background-color: blue;
+        max-width: 115%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 120px;
+        padding-left: 120px;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+
+    &__hr{
+        margin: 1rem;
+        border-radius: 15%;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid blue;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+}
+
+input{
+    color: black;
+    max-width: 115%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+

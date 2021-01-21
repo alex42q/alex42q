@@ -125,6 +125,20 @@ app.get("/reset/:token", function(req, res){
 
 });
 
+app.get("/profile", function(req, res){
+    if(req.isAuthenticated()){
+        RegisterUser.findOne({_id:req.user._id})
+        .then(user =>{
+            res.render("pages/profile", {user: user })
+        })
+        .catch(err =>{
+            console.log(err)
+        })
+    }else{
+        res.redirect("/login")
+    }
+})
+
 app.get("*", function(req, res){
     res.render("pages/404")
 })
@@ -259,7 +273,50 @@ app.post("/newpassword", function(req, res){
 });
 
 
+app.post('/changeUsername', function(req, res){
+    if(req.isAuthenticated()){
+        RegisterUser.findOneAndUpdate({username:req.body.username})
+        .then( user =>{
+            user.save()
+        })
+        .then(result =>{
+            res.redirect("/logout")
+        })
+        .catch((err) =>{
+            console.log(err)
+        })
+    }
+})
 
+app.post("/changePassword", function(req, res){
+    if(req.isAuthenticated()){
+        RegisterUser.findOne({_id:req.user._id})
+        .then(user =>{
+            user.changePassword(req.body.oldPassword, req.body.newPassword, (err) =>{
+                console.log(err)
+            })
+        })
+        .then(result =>{
+            console.log("password Changed")
+            res.redirect("/logout")
+            })
+        .catch(err =>{
+            console.log(err)
+        })
+    }
+})
+
+app.post("/changeEmail", function(req, res){
+    if(req.isAuthenticated()){
+        RegisterUser.findOneAndUpdate({_id:req.user._id, email:req.body.email})
+        .then(result =>{
+            res.redirect("/login")
+        })
+        .catch(err =>{
+            console.log(err)
+        })
+    }
+})
 
 
 app.listen(PORT, function(err){
