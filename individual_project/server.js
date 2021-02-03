@@ -10,7 +10,7 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const LocalStrategy   = require('passport-local').Strategy;
 const RegisterUser = require("./models/user")
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 
 app.use(express.static("public"))
