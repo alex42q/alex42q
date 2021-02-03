@@ -11,12 +11,14 @@ const auth = require('passport-local-authenticate');
 const passportLocalMongoose = require("passport-local-mongoose")
 const RegisterUser = require("./models/users")
 const Posts = require("./models/posts")
+const Likes = require("./models/likes")
 const PORT = 3000;
 
 app.set("view engine", "ejs")
 app.use(express.static("public"))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended:false }))
+app.use(express.json())
 
 const store = new MongoDBStore({
     uri:"mongodb://localhost:27017/newfacebook",
@@ -33,7 +35,8 @@ app.use(session({
 
 mongoose.connect("mongodb://localhost:27017/newfacebook", 
 {useUnifiedTopology: true,
-useNewUrlParser: true
+useNewUrlParser: true,
+useFindAndModify:false
 })
 
 const db = mongoose.connection

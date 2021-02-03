@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.nav__leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__rightSide, .nav__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__person{
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    margin-right: 1rem;
+}
+
+.nav__btn{
+    background-color: rgb(64, 107, 224);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    outline-style: none;
+}
+
+.nav__h3{
+    margin-right: 1rem;
+    color: white;
+}
+
+.nav__icon{
+    margin-right: 0.3rem;
+    color: teal;
+}
+
+.nav__code{
+    color: whitesmoke;
+}
+
+.nav__acad{
+    color: teal;
+}
+
+.nav__ul{
+    display: flex;
+}
+
+.nav__li{
+    list-style: none;
+}
+
+.nav__link{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+}
+
+.nav__active{
+    border-bottom: 1px solid white;
+}
+
+.container{
+    display: flex;
+}
+
+.container__img{
+    width: 50vw;
+    height: 90vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    border: none;
+}
+
+
+
+.container__rightSide{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -60%);
+    flex-direction: column;
+}
+
+.container__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+input{
+    padding: 15px;
+    padding-right: 0rem;
+    width: 20vw;
+    margin-top: 0.1rem;
+}
+
+.container__btn{
+    padding: 15px;
+    color: white;
+    background-color: blue;
+    border: none;
+    width: 20vw;
+}
+
+.container__h2{
+    color: white;
+    margin-bottom: 1rem;
+}

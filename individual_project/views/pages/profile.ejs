@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/profile.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="admin__leftSide">
+            <div class="admin__leftHeader">
+                <div class="nav__icons">
+                    <i class="fas fa-code nav__icon"></i>
+                </div>
+                <div class="nav__logo">
+                    <h1 class="nav__h1"><span class="nav__code">Code</span><span class="nav__acad">Academy</span></h1>
+                </div>
+            </div>
+            <div class="admin__selections">
+                <div class="adminDashboard">
+                    <h3 class="admin__h3"><a class="admin__link" href="/myprofile">My profile</a></h3>
+                </div>
+                <div class="admin__secHome">
+                    <h3 class="admin__h3"><a class="admin__link" href="/home">Home</a></h3>
+                </div>
+                <div class="admin__secLogout">
+                    <h3 class="admin__h3"><a class="admin__link" href="/logout">Logout</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="admin__rightSide">
+            <div id="con" class="getStu">
+                <h2 id="p1" class="getStuH1">You have been connected as <%=username%></h2>
+            </div>
+            
+                    <form class="container__updateForm" action="/updateEmail" method="POST">
+                     <h2>Update your email</h2>
+                    <input type="hidden" name="id" value="<%=username%>>">
+                    <input type="email" name="username" placeholder="Write your new emai">
+                    <button class="postStuBtn">Submit</button>
+                    </form>
+
+                    <form class="container__updateForm" action="/updatePassword" method="POST">
+                     <h2>Update your Password</h2>
+                    <input type="hidden" name="id" value="<%=username%>">
+                    <input type="password" name="oldpassword" placeholder="Write your old password">
+                    <input type="password" name="newpassword" placeholder="Write your new password">
+                    <input type="password" placeholder="Retype your new password">
+                    <button class="postStuBtn">Submit</button>
+                    </form>
+
+                    <form class="container__updateForm" action="/updatefirstLast" method="POST">
+                        <h2>Update your firstname and lastname</h2>
+                    <input type="hidden" name="id" value="<%username%>">
+                    <input type="text" name="firstname" placeholder="Write your new firstname">
+                    <input type="text" name="lastname" placeholder="Write your new lastname">
+                    <button class="postStuBtn">Submit</button>
+                    </form>
+            
+    </div>
+</body>
+</html>

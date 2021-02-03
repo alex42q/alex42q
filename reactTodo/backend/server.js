@@ -38,7 +38,8 @@ app.use(express.json())
 
 mongoose.connect("mongodb://localhost:27017/reactTodo",{
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useFindAndModify:false
 })
 
 
@@ -74,11 +75,23 @@ app.get("/showTodos", function(req, res){
 
 app.get("/profile", function(req,res){
     if(req.isAuthenticated()){
-        res.send("authenticated")
+        User.findOne({username:req.user.username})
+        .then(findUsername=>{
+            res.send({
+            authenticate:"authenticated",
+            user:findUsername
+        })
+
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+        
     }else{
         res.send("not authenticated")
     }
 })
+
 
 app.get("/logout", function(req, res, next){
     if(req.isAuthenticated()){
@@ -105,8 +118,7 @@ app.post("/users", function(req, res){
             User.authenticate("local")(req, res, function(){
                 console.log("User registered")
             })
-        }
-    })
++p0-    })
 })
 
 app.post("/login", function(req, res, next){
@@ -148,6 +160,40 @@ app.post("/getTodos", function(req, res, next){
         }
     })
   }
+})
+
+app.post("/deleteTodos", function(req, res, next){
+    Todo.findOneAndDelete({_id:req.body._id})
+    .then(getId=>{
+        console.log(getId)
+        res.json(getId)
+    })
+    .catch(err=>{
+        console.log(err)
+        })
+})
+
+app.post("/updateEmail", function(req, res){
+    if(req.isAuthenticated()){
+        User.findOneAndUpdate({username:req.body.username})
+        .then(changeEmail=>{
+            res.send("email changed")
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+})
+
+app.post("/ticked", function(req, res, next){
+    Todo.findOneAndUpdate({_id:req.body._id}, {ticked:req.body.ticked}, {new:true,upsert:true})
+        .then(tickTodo=>{
+            console.log(tickTodo.ticked)
+            res.send(tickTodo)
+        })
+    .catch(err=>{
+        console.log(err)
+    })
 })
 
 app.listen(PORT, function(err){

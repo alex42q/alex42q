@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+.admin__leftSide{
+    background-color: black;
+    height: 100vh;
+    width: 15vw;
+}
+
+.nav__btn{
+    background-color: rgb(64, 107, 224);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    outline-style: none;
+}
+
+.nav__h3{
+    margin-right: 1rem;
+    color: white;
+}
+
+.nav__icon{
+    margin-right: 0.3rem;
+    color: teal;
+}
+
+.nav__code{
+    color: whitesmoke;
+}
+
+.nav__acad{
+    color: teal;
+}
+
+.admin__h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.admin__selections{
+    margin-top: 3rem;
+}
+
+.admin__link{
+    text-decoration: none;
+    color: white;
+}
+
+.admin__leftHeader{
+    display: flex;
+    align-items: center;
+}
+
+
+.admin__rightSide{
+    background-color: rgba(221, 220, 220, 0.692);
+    width: 100%;
+    height: 100vh;
+}
+
+.findStuBtn{
+    padding: 15px;
+    border: none;
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+.findStuBtn2{
+    padding: 15px;
+    border: none;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+p{
+    margin-right: 0.5rem;
+ 
+}
+
+.user{
+    margin: 1rem 0rem;
+    display: flex;
+    box-shadow: 3px 3px 3px 3px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.getStu,.postStu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+input{
+    padding: 15px;
+    width: 40rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.postStu{
+    margin-top: 3rem;
+}
+
+.postStuBtn{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    width: 40rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.admin__hr{
+    margin: 2rem 10rem;
+}
+
+.postStuH2{
+    margin-bottom: 1rem;
+}
+
+.userBtn{
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.updateForm{
+    display: none;
+}
+
+.updateForm__after{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    z-index: 1000;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 3px;
+    padding: 10rem;
+}
+
+.updateToggleTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__updateForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0rem;
+
+}
+
+.formUpdate{
+padding: 5rem;
+background-color: whitesmoke;
+box-shadow: 3px 3px 3px 3px;
+}
+
+.updateH2{
+    margin-bottom: 0.5rem;
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="nav">
+        <%-include("../partials/loginNav.ejs"); %>
+    </nav>
+    <div class="container">
+        <div class="container__leftSide">
+            <img src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="container__img">
+        </div>
+        <div class="container__rightSide">
+            <div class="container__header">
+                <div class="nav__icons">
+                    <i class="fas fa-code nav__icon"></i>
+                </div>
+                <div class="nav__logo">
+                    <h1 class="nav__h1"><span class="nav__code">Code</span><span class="nav__acad">Academy</span></h1>
+                </div>
+            </div>
+            <div class="container__headerText">
+                <h2 class="container__h2">Login</h2>
+            </div>
+            <div class="container__form">
+                <form action="/login-form" method="POST">
+                    <div class="container__email">
+                        <input type="text" placeholder="Please write a valid Email" name="username">
+                    </div>
+                <div class="container__password">
+                    <input type="password" placeholder="Please write a valid password" name="password">
+                </div>
+                <div class="container__button">
+                    <button class="container__btn" type="submit">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

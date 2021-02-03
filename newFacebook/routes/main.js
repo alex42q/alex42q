@@ -5,7 +5,9 @@ const main = require("../controllers/main")
 
 router.get("/main", main.mainGet)
 
+
 router.post("/posts", main.mainPostpost)
+router.post("/likes", main.PostLikes)
 
 
 module.exports = router

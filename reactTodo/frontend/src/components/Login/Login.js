@@ -33,7 +33,7 @@ export default class Login extends Component {
                 this.props.history.push("/register")
             }else if(response.data==="loggedIn"){
                 console.log(response.data)
-                this.props.history.push('/profile');
+                this.props.history.push('/');
             }
         })
         .catch(err=>{

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "compile:sass": "node-sass public/scss/search.scss public/css/search.css -w"
+    "compile:sass": "node-sass public/scss/main.scss public/css/main.css -w"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,107 @@
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/kirill-sh-eVWWr6nmDf8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-bottom:31.1vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoImage{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    margin-top: 3rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+}
+
+.textsContainer{
+text-align: center;
+}
+
+h2,h3,h4{
+    color: white;
+}
+
+.connect{
+    color: green;
+}
+
+.now{
+    color: blue;
+}
+
+h2{
+    font-size: 7rem;
+}
+
+h3{
+    font-size: 4rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+hr{
+    margin: 1rem 35rem;
+}
+
+
+
+.episkepsi{
+    border-style: none;
+    border: none;
+    padding: 25px;
+    background: linear-gradient(rgba(5, 98, 236, 0.699), rgba(5, 81, 196, 0.699));
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 30vw;
+}
+
+.learn{
+    border-style: none;
+    border: none;
+    padding: 25px;
+    background: linear-gradient(rgba(22, 207, 5, 0.699), rgba(22, 207, 5, 0.699));
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    width: 30vw;
+}
+
+.buttonEpiskepsi{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+

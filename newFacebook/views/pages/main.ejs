@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/fetchLikes.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Fatsebook</title>
 </head>
@@ -64,13 +66,15 @@
                 <form action="/posts" method="POST">
                 <div class="container__posts-post-input">
                     <input class="container__posts-input" type="text" name="description" placeholder="Write your post...">
+                    <input type="hidden" name="likeId">
+
                 </div>
                 <div class="container__posts-button">
                     <button class="container__posts-btn">Post it!</button>
                 </div>
             </form>
             </div>
-            <% for(post of posts){%>
+                <% for(post of posts){%>
             <div class="showPosts-container">
                 <div class="showPosts__card">
                     <div class="showPosts__name">
@@ -87,13 +91,25 @@
                         <h4 class="showPosts__h4"><%=post.description %></h4>
                     </div>
                     <div class="showPosts__buttons">
+                        <form id="form" method="POST">
                     <div class="showPosts__buttonLikes">
-                        <input type="submit" id="likeButton" class="showPosts__btnLike" placeholder="Like" value="Like" name="likes">
-                        <h4 class="showPosts__h1" id="like">0</h4>
+                        <button type="button" class="postId" name="postId" value="<%=post._id%>">
+                            Likes <p id="demo" class="like"><%=post.like%>
+                            <input class="like1" type="hidden" value="<%=post.like%>">
+                            </p>
+                        
+                        </button>
+                        <input type="hidden" name="likeId">
+                            
+                        
+                    </form>
                     </div>
+                <form action="/comments" method="POST">
                     <div class="showPosts__buttonComments">
                         <button class="showPosts__btnComment">Comment</button>
                     </div>
+                </form>
+                
                 </div>
                 </div>
             </div>

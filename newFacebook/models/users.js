@@ -34,7 +34,11 @@ const userSchema = mongoose.Schema({
     },
     address:{
         type:String
-    }
+    },
+    like:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"likes"
+    }]
 })
 
 userSchema.plugin(passportLocalMongoose)

@@ -36,13 +36,93 @@
 .pTodo{
     color: black;
 }
+.pTodo2{
+    opacity: 0;
+    transition-delay: 2s;
+    transition: transform 0.3s ease-out;
+}
+
 
 .deleteIcon{
     color: red;
     position: absolute;
-    
 }
 
 .fas{
-    position: absolute;
+position: relative;
+left: 20.5rem;
+bottom: 3.1rem;
+color: red;
+}
+
+input{
+    padding: 10px;
+    padding-right: 3rem;
+}
+
+i{
+    margin-bottom: -1.9rem;
+}
+
+.nav{
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileIcon{
+    cursor: pointer;
+    color: blue;
+}
+
+.nav__ul{
+    display: none;
+}
+
+.nav__ul_after{
+    display: block;
+}
+
+.nav__li{
+    list-style: none;
+}
+
+.nav__link{
+    text-decoration: none;
+}
+
+.icon__tick{
+position: absolute;
+margin-left: 2rem;
+color: yellowgreen;
+}
+
+.ticked__toggled{
+    text-decoration: line-through;
+}
+
+@keyframes deleteTodo{
+    0%{
+        opacity: 100%;
+    }
+
+    70%{
+        opacity: 70%;
+        transform: rotate(20deg);
+    }
+
+    80%{
+        opacity: 80%;
+        transform: rotate(25deg);
+    }
+
+    90%{
+        opacity: 90%;
+        transform: rotate(29deg);
+    }
+
+    100%{
+        opacity: 0%;
+    }
 }

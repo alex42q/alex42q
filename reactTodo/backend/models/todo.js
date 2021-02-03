@@ -7,6 +7,10 @@ const TodoSchema = new mongoose.Schema({
     userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"users"
+    },
+    ticked:{
+        type:String,
+        default:"false"
     }
 })
 

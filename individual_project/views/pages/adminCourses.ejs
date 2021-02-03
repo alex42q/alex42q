@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f9fb28277.js" crossorigin="anonymous"></script>
+    <script src="js/fetchCourses.js"></script>
+    <link rel="stylesheet" href="css/adminCourses.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="admin__leftSide">
+            <div class="admin__leftHeader">
+                <div class="nav__icons">
+                    <i class="fas fa-code nav__icon"></i>
+                </div>
+                <div class="nav__logo">
+                    <h1 class="nav__h1"><span class="nav__code">Code</span><span class="nav__acad">Academy</span></h1>
+                </div>
+            </div>
+            <div class="admin__selections">
+                <div class="adminDashboard">
+                    <h3 class="admin__h3"><a class="admin__link" href="/admin">Dashboard</a></h3>
+                </div>
+                <div class="admin__secStudents">
+                    <h3 class="admin__h3"><a class="admin__link" href="/adminstudents">Students</a></h3>
+                </div>
+                <div class="admin__secCourses">
+                    <h3 class="admin__h3"><a class="admin__link" href="/admincourses">Courses</a></h3>
+                </div>
+                <div class="admin__secTrainers">
+                    <h3 class="admin__h3"><a class="admin__link" href="/admintrainers">Trainers</a></h3>
+                </div>
+                <div class="admin__secAssingments">
+                    <h3 class="admin__h3"><a class="admin__link" href="/adminass">Assingments</a></h3>
+                </div>
+                <div class="admin__secHome">
+                    <h3 class="admin__h3"><a class="admin__link" href="/home">Home</a></h3>
+                </div>
+                <div class="admin__secLogout">
+                    <h3 class="admin__h3"><a class="admin__link" href="/logout">Logout</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="admin__rightSide">
+            <div id="con" class="getStu">
+                <h2 id="p1" class="getStuH1">Find All Courses</h2>
+                <button type="button" onclick="fetchStudents()" id="findStudents" class="findStuBtn">Find</button>
+                <form action="/getCourses" method="GET">
+                                       
+                </form>
+                <div id="app"></div>
+                <div class="update">
+                </div>
+            
+            </div>
+            <hr class="admin__hr">
+            <div class="postStu">
+                <h2 class="postStuH2">Insert a new course</h2>
+                <form action="/postCourses" method="POST">
+                <input type="hidden" name="courseId">
+                <div class="postStuFirstname">
+                <input type="text" name="title" placeholder="Title">
+                </div>
+                <div class="postStuLastname">
+                <input type="text" name="stream" placeholder="Stream">
+                </div>
+                <div class="postStuDateOfBirth">
+                <input type="text" name="type" placeholder="Type">
+                </div>
+                <div class="postStuTution">
+                <input type="date" name="start_date" placeholder="Start Date">
+                </div>
+                <div class="postStuTution">
+                    <input type="date" name="end_date" placeholder="End Date">
+                    </div>
+                <div class="postStuButton">
+                    <button id="postBtn" type="submit" class="postStuBtn">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
