@@ -1,4 +1,3 @@
-const { compareSync } = require("bcrypt")
 const dbconnection = require("../lib/db")
 
 exports.getAdminCourses = (req, res, next) =>{

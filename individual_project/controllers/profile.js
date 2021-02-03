@@ -1,6 +1,6 @@
 const dbconnection = require("../lib/db")
 const { get } = require("../routes/profile")
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 exports.getProfile = (req, res, next)=>{
     if(req.session.loggedin){

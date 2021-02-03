@@ -1,6 +1,6 @@
 const RegisterUser = require("../models/user")
 const dbconnection = require("../lib/db")
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 exports.getRegister = (req, res, next)=>{
     res.render("../views/pages/register.ejs")
