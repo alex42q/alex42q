@@ -10,41 +10,29 @@ exports.getLogin = (req, res, next) =>{
 
 exports.postLogin = (req, res, next)=>{
     var username = req.body.username;
-    var password = req.body.password;
- 
     const loginQuery = ("select * from users where username = ?")
-    if(username && password){
-        dbconnection.query(loginQuery, [req.body.username], function(err, results){
-            var user = results[0].password
-            if(results.length>0){
-                bcrypt.compare(req.body.password, user.toString(), function(err, hashed){
-                    if(err){
-                       return next(err)
-                    }
-                    if(!user){
-                        res.send("wrong")
-                    }
-                    if(hashed){
-                        req.session.loggedin = true;
-                        req.session.username = username;
-                        res.redirect("/home")
-                    }else if(!hashed){
-                        return next("Wrong Password Please go back and try again")
-                    }else if(!username){
-                        res.send("This email is not valid please go back and try again")
-                    }else{
-                        res.redirect("/profile")
-                    }
-                })
-                
-            }else{
-                res.redirect("/login")
-            }
-            
-        })
-    }else{
-        res.send("enter username and password")
-        res.end()
-    }
+    dbconnection.query(loginQuery,[req.body.username], function(err, data){
+        if(data[0]===undefined){
+            return next("email not found, please go back and try again")
+        }else{
+            dbconnection.query(loginQuery, [req.body.username], function(err, dataPass){
+                var password = dataPass[0].password
+                if(dataPass.length>0){
+                    bcrypt.compare(req.body.password, password, function(err, hashed){
+                        if(err){
+                            console.log(err)
+                        }
+                        if(hashed){
+                            req.session.loggedin = true;
+                            req.session.username = username;
+                            res.redirect("/home")
+                        }else{
+                            res.redirect("/login")
+                        }
+                    })
+                }
+            })
+        }
+    })
 }
 
