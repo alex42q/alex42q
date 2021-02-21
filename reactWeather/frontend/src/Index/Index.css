@@ -1,0 +1,11 @@
+.index__container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./miha-rekar-gzMvo6cR6J0-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.index__h2, .index__h4{
+    color: white;
+}

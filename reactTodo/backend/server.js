@@ -118,7 +118,8 @@ app.post("/users", function(req, res){
             User.authenticate("local")(req, res, function(){
                 console.log("User registered")
             })
-+p0-    })
+        }
+    })
 })
 
 app.post("/login", function(req, res, next){

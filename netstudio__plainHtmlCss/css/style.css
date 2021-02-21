@@ -1,0 +1,594 @@
+@font-face{
+    font-family: "Mark Simonson - Proxima Nova Bold";
+    src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf");
+}
+
+@font-face{
+    font-family: "Mark Simonson - Proxima Nova Regular";
+    src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf");
+}
+
+@font-face{
+    font-family: "SourceSansPro-Bold";
+    src: url("../fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face{
+    font-family: "SourceSansPro-Regular";
+    src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-image: url("../Images/bg.png");
+    height: 100vh;
+    padding-bottom: 3rem;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.header__topNav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    align-items: center;
+}
+
+.header__topNavLeft, .header__topNavRight,.header__ul, .header__topNavRightRegLog, .header__topNavRightFlag{
+    display: flex;
+}
+
+.header__topNavLeftIcon{
+    padding-top: 2rem;
+}
+
+.header__h3, .header__icon{
+    color: white;
+}
+
+.header__li{
+    list-style: none;
+}
+
+.header__h3{
+    font-family: "SourceSansPro-Bold";
+    font-size: 12px;
+    line-height: 15.08px;
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+    font-family: "SourceSansPro-Bold";
+    font-size: 14px;
+}
+
+.header__topNavRightFlag{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__bottomNav{
+    margin: 1rem 3rem;
+}
+
+
+.header__bottomNavContainer{
+    background-image: url("../Images/Combined\ Shape.png");
+    height: 5rem;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__bottomNavInsideImage{
+    position: relative;
+    left: 2.3rem;
+    bottom: 5rem;
+    width: 13vw;
+}
+
+.header__topNavIcon{
+    color: white;
+}
+
+.header__topNavArrowIcon{
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.header__topNavRightIcon{
+    margin-right: 0.5rem;
+}
+
+
+.header__bottomNavUl{
+    display: flex;
+    align-items: center;
+}
+
+.header__bottomNavLi{
+    margin:1.5rem 2.4rem;
+    list-style: none;
+}
+
+.header__bottomIcon{
+    margin: 0.3rem 2rem;
+}
+
+.header__bottomNavLink{
+    font-size: 16px;
+    line-height: 17.6px;
+    color: #002868;
+    font-weight: 700;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__bottomNavLink:hover{
+    color: #BF0A30;
+    cursor: pointer;
+}
+
+.header__drop{
+    display: none;
+}
+
+.header__drop__after{
+    display: flex;
+    position: absolute;
+    top: 12.9rem;
+}
+
+.header__dropUl{
+    background-color: white;
+    z-index: 10000;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.header__dropLi{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.header__dropLink{
+    text-decoration: none;
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+    font-size: 14px;
+}
+
+.header__dropLink:hover{
+    text-decoration: none;
+    color:#BF0A30;
+    font-family: "SourceSansPro-Bold";
+    font-size: 14px;
+}
+
+.header__bottomText{
+    position: relative;
+    right:25rem;
+}
+
+.header__bottomP,.header__bottomH3{
+    text-align: center;
+    color: white;
+}
+
+.header__bottomP{
+   font-size: 0.5rem;
+}
+
+.header__circle{
+    background-image: url("../Images/circle.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.header__circleTexts{
+text-align: center;
+position: relative;
+top: 5rem;
+}
+
+.header__circleH4{
+    color: white;
+    margin-top: 0.5rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__middleTexts{
+    margin-top: 3rem;
+}
+
+.header__h4, .header__p{
+    color: white;
+}
+
+.header__p{
+    font-family: "SourceSansPro-Regular";
+    font-size: 16px;
+    text-align: center;
+}
+
+.header__h4{
+    font-size: 24px;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__p{
+    margin-top: 2rem;
+    font-family: "SourceSansPro-Regular";
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.header__middleButton{
+    margin-top: 3rem;
+}
+
+.header__middleBtn{
+    border: 1px solid white;
+    background: none;
+    padding: 15px;
+    color: white;
+    width: 12rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count{
+ background-color: #F8F8F8;
+ padding-bottom:47rem;
+ z-index: -1000;
+}
+
+.count__container{
+    background-image: url("../Images/colored.png");
+    background-size:cover;
+   padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%,63%);
+    height: 80%;
+}
+
+
+.count__topSide{
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 1.1rem;
+}
+
+.count__middleHeader{
+    margin-top: 1rem;
+}
+
+.count__h2{
+    font-size: 48px;
+    color: #BF0A30;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__bottomContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem -15rem;
+}
+
+.count__leftSideP{
+    margin: 2rem 0rem;
+    font-size: 16px;
+    font-family: "SourceSansPro-Regular";
+}
+
+.count__leftSideBotP{
+    margin-top: 2rem;
+    font-size: 16px;
+    font-family: "SourceSansPro-Regular";
+}
+
+.count__leftSideH3{
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__rightSideH3{
+    margin-bottom: 2rem;
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__leftSideBottomH3{
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__rightSideP{
+    font-family: "SourceSansPro-Regular";
+    margin-bottom: 0.3rem;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.count__rightSideHead{
+    margin-bottom: 2rem;
+}
+
+.count__rightSideHeadP{
+    margin-top: 2rem;
+}
+
+.count__endingContainer{
+    margin-top: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+.count__endH3,.count__endH3foot{
+    font-size: 2rem;
+}
+
+.count__endH3{
+    font-size: 18px;
+    color: #BF0A30;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__endH2{
+    font-size: 34px;
+    color:#002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__endH3foot{
+    font-size: 18px;
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.erga{
+    background-color: #002868;
+    height: 50vh;
+    padding-bottom: 43rem;
+    z-index: 1000;
+}
+
+.erga__header{
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.erga__h3{
+    color: white;
+    font-family: "SourceSansPro-Bold";
+    font-size: 12px;
+}
+
+.erga__photosContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.erga__container{
+    margin: 1rem 0.7rem;
+}
+
+.erga__imageH3{
+    color: white;
+    font-family: "SourceSansPro-Bold";
+    font-size: 24px;
+
+}
+
+.erga__imageP{
+    color: white;
+    margin-top: 1rem;
+    font-family: "SourceSansPro-Regular";
+    font-size: 16px;
+}
+
+.erga__span{
+    color: red;
+    margin-right: 0.5rem;
+}
+
+.erga__imageH4{
+    margin-top: 1rem;
+    color: white;
+    font-size: 14px;
+    font-family: "SourceSansPro-Bold";
+}
+
+.erga__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.erga__btn{
+    border: 1px solid white;
+    background: none;
+    padding: 18px;
+    color: white;
+    width: 15rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: "SourceSansPro-Bold";
+    font-size: 14px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.contact__header{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact__h2{
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.contact__input{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contact__inp, textarea{
+    padding: 3px;
+    width: 45rem;
+    height: 65px;
+    border: 1px solid rgba(204, 204, 204, 0.863);
+    border-radius: 5px;
+}
+
+
+.contact__hr{
+    width: 740px;
+    margin: 2rem -1rem;
+    border: 1px solid rgba(228, 227, 227, 0.863);
+}
+
+.contact__button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.contact__mail{
+    position: relative;
+    right: 44.5rem;
+    top: 0.3rem;
+}
+
+
+.contact__textarea{
+    height: 10rem;
+}
+
+.contact__phoneIcon{
+    position: relative;
+    right: 44.5rem;
+    top:0.4rem;
+}
+
+
+.contact__btn{
+    border: none;
+    padding: 10px;
+    width: 15rem;
+    outline-style: none;
+    color: white;
+    background: #BF0A30;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "SourceSansPro-Bold";
+}
+
+.contact__symbol{
+    font-size: 1.8rem;
+    position: relative;
+    left: 3rem;
+    bottom: 0.2rem;
+}
+
+footer{
+    background-color: #002868;
+    padding-bottom: 1rem;
+}
+
+.footer__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__texts{
+    text-align: center;
+    color: white;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__icons{
+    margin-top: 2rem;
+}
+
+.footer__img{
+    margin-right: 2rem;
+}
+
+.footer__links{
+    margin-top: 2rem;
+}
+
+.footer__ul{
+    display: flex;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__toTop{
+    position: relative;
+    left: 45rem;
+    bottom: 1.3rem;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 5rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__link:hover{
+    color: #BF0A30;
+    cursor: pointer;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__copyrights{
+    margin-top: 2rem;
+}
+
+.footer__p{
+    color: #ffff;
+    font-weight: lighter;
+    font-family: "SourceSansPro-Regular";
+}

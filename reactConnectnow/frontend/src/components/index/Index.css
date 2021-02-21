@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./images/kirill-sh-eVWWr6nmDf8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    object-fit: cover;
+    padding-bottom: 7.3rem;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLogo__container{
+    padding-left: 3rem;
+}
+
+.nav__logo{
+    background-image: url("./images/connect.png");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+li{
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.active{
+    border-bottom: 1px solid whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+h1,h3{
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+hr{
+    margin: 3rem 50rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.con{
+    color: green;
+}
+
+.now{
+    color: blue;
+}
+
+.headButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0rem;
+}
+
+.epiBtn{
+    width: 30rem;
+    border: none;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.learnBtn{
+    width: 30rem;
+    border: 2px solid green;
+    padding: 25px;
+    padding-right: 4.1rem;
+    padding-left: 4.1rem;
+    border-radius: 5px;
+    background-color: none;
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.learnBtn:hover{
+    width: 30rem;
+    border: 2px solid green;
+    padding: 25px;
+    padding-right: 4.1rem;
+    padding-left: 4.1rem;
+    border-radius: 5px;
+    background-color: green;
+    background: green;
+    transition: 0.5s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.epiButton{
+    margin-bottom: 2rem;
+}

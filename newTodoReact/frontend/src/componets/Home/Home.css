@@ -1,0 +1,128 @@
+.home{
+    background-color: blue;
+    height: 100vh;
+}
+
+.home__inputContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home__icon{
+    color: white;
+    position: absolute;
+    top:-0.2rem
+}
+
+.home__input{
+    padding: 7px;
+    width: 16rem;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.home__nav{
+    background-color: black;
+    padding: 1rem 1rem;
+}
+
+.home__navH2, .home__navH5{
+    color: white;
+}
+
+.home__navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__navRightSide{
+    display: flex;
+    align-items: center;
+}
+
+.home__navIcon{
+    color: white;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.showTodo{
+display: flex;
+flex-direction: column;
+}
+
+.bin{
+    position: relative;
+    left: 16rem;
+    top: -2.5rem;
+    color: rgb(212, 8, 8);
+    margin: 0rem 0.5rem;
+}
+
+.tick{
+    position: relative;
+    left:16rem;
+    top: -2.5rem;
+    color: green;
+}
+
+.bin2{
+    color: rgb(212, 8, 8);
+    margin: 0rem 0.5rem;
+}
+
+.tick2{
+    color: rgb(68, 128, 0);
+}
+
+.home__navList{
+    display: none;
+}
+
+.home__navListAfter{
+    display: flex;
+}
+
+.home__li{
+    list-style: none;
+}
+
+.home__link{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes deleteTodo{
+    0%{
+        opacity: 100%;
+    }
+
+    70%{
+        opacity: 70%;
+        transform: rotate(20deg);
+    }
+
+    80%{
+        opacity: 80%;
+        transform: rotate(25deg);
+    }
+
+    90%{
+        opacity: 90%;
+        transform: rotate(28deg);
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+
+
+

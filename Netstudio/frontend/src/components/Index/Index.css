@@ -1,0 +1,468 @@
+@font-face{
+    font-family: "Mark Simonson - Proxima Nova Bold";
+    src: url("./fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf");
+}
+
+@font-face{
+    font-family: "Mark Simonson - Proxima Nova Regular";
+    src: url("./fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf");
+}
+
+@font-face{
+    font-family: "SourceSansPro-Bold";
+    src: url("./fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face{
+    font-family: "SourceSansPro-Regular";
+    src: url("./fonts/SourceSansPro-Regular.ttf");
+}
+
+.header{
+    background-image: url("./Images/bg.png");
+    height: 100vh;
+    padding-bottom: 3rem;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.header__topNav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    align-items: center;
+}
+
+.header__topNavLeft, .header__topNavRight,.header__ul, .header__topNavRightRegLog, .header__topNavRightFlag{
+    display: flex;
+}
+
+.header__topNavLeftIcon{
+    padding-top: 2rem;
+}
+
+.header__h3, .header__icon{
+    color: white;
+}
+
+.header__li{
+    list-style: none;
+}
+
+.header__h3{
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__topNavRightFlag{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__bottomNav{
+    margin: 1rem 3rem;
+}
+
+
+.header__bottomNavContainer{
+    background-image: url("./Images/Combined\ Shape.png");
+    height: 5rem;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__bottomNavInsideImage{
+    position: relative;
+    right: 0.7rem;
+    bottom: 5rem;
+    width: 13vw;
+}
+
+
+.header__bottomNavUl{
+    display: flex;
+    align-items: center;
+}
+
+.header__bottomNavLi{
+    margin:1.5rem 1.1rem;
+    list-style: none;
+}
+
+.header__bottomIcon{
+    margin: 0.3rem 2rem;
+}
+
+.header__bottomNavLink{
+    font-size: 1.1rem;
+    color: #002868;
+    font-weight: bold;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__bottomText{
+    position: relative;
+    right:25rem;
+}
+
+.header__bottomP,.header__bottomH3{
+    text-align: center;
+    color: white;
+}
+
+.header__bottomP{
+   font-size: 0.5rem;
+}
+
+.header__circle{
+    background-image: url("./Images/circle.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.header__circleTexts{
+text-align: center;
+position: relative;
+top: 5rem;
+}
+
+.header__circleH4{
+    color: white;
+    margin-top: 0.5rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__middleTexts{
+    margin-top: 3rem;
+}
+
+.header__h4, .header__p{
+    color: white;
+}
+
+.header__h4{
+    font-size: 1.5rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.header__p{
+    margin-top: 3rem;
+    font-family: "SourceSansPro-Regular";
+}
+
+.header__middleButton{
+    margin-top: 2rem;
+}
+
+.header__middleBtn{
+    border: 1px solid white;
+    background: none;
+    padding: 18px;
+    color: white;
+    width: 15rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count{
+ background-color: #F8F8F8;
+ height: 100vh;
+ padding-bottom: 76rem;
+ z-index: -1000;
+}
+
+.count__container{
+    background-image: url("./Images/colored.png");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+   padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%,39%);
+    height: 130%;
+    width: 60%;
+}
+
+.count__topSide{
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-right: 4rem;
+}
+
+.count__middleHeader{
+    margin-top: 6rem;
+}
+
+.count__h2{
+    font-size: 3rem;
+    color: #BF0A30;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__bottomContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem -20rem;
+}
+
+.count__leftSideP{
+    margin: 2rem 0rem;
+    font-size: 1.2rem;
+    font-family: "SourceSansPro-Regular";
+}
+
+.count__leftSideBotP{
+    margin-top: 2rem;
+}
+
+.count__leftSideH3{
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__rightSideH3{
+    margin-bottom: 2rem;
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__leftSideBottomH3{
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__rightSideP{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.count__endingContainer{
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.count__endH3,.count__endH3foot{
+    font-size: 2rem;
+}
+
+.count__endH3{
+    color: #BF0A30;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__endH2{
+    font-size: 3rem;
+    color:#002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.count__endH3foot{
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.erga{
+    background-color: #002868;
+    height: 50vh;
+    padding-bottom: 40rem;
+}
+
+.erga__header{
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.erga__h3{
+    color: white;
+    font-family: "SourceSansPro-Bold";
+}
+
+.erga__photosContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.erga__container{
+    margin: 1rem 2rem;
+}
+
+.erga__imageH3{
+    color: white;
+    margin-top: 1rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.erga__imageP{
+    color: white;
+    margin-top: 1rem;
+    font-family: "SourceSansPro-Regular";
+}
+
+.erga__span{
+    color: red;
+    margin-right: 0.5rem;
+}
+
+.erga__imageH4{
+    margin-top: 1rem;
+    color: white;
+}
+
+.erga__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.erga__btn{
+    border: 1px solid white;
+    background: none;
+    padding: 18px;
+    color: white;
+    width: 15rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: "SourceSansPro-Bold";
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.contact__header{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact__h2{
+    color: #002868;
+    font-family: "SourceSansPro-Bold";
+}
+
+.contact__inp, textarea{
+    padding: 10px;
+    width: 45rem;
+    border: 1px solid rgba(204, 204, 204, 0.863);;
+}
+
+.contact__hr{
+    margin: 2rem -5rem;
+    border: 1px solid rgba(228, 227, 227, 0.863);
+}
+
+.contact__button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.contact__btn{
+    border: none;
+    padding: 10px;
+    width: 15rem;
+    outline-style: none;
+    color: white;
+    background: #BF0A30;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "SourceSansPro-Bold";
+}
+
+.contact__symbol{
+    font-size: 1.8rem;
+    position: relative;
+    left: 3rem;
+    bottom: 0.2rem;
+}
+
+footer{
+    background-color: #002868;
+    padding-bottom: 1rem;
+}
+
+.footer__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__texts{
+    text-align: center;
+    color: white;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__icons{
+    margin-top: 2rem;
+}
+
+.footer__img{
+    margin-right: 2rem;
+}
+
+.footer__links{
+    margin-top: 2rem;
+}
+
+.footer__ul{
+    display: flex;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 5rem;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__link:hover{
+    color: #BF0A30;
+    cursor: pointer;
+    font-family: "SourceSansPro-Bold";
+}
+
+.footer__copyrights{
+    margin-top: 2rem;
+}
+
+.footer__p{
+    color: #ffff;
+    font-weight: lighter;
+    font-family: "SourceSansPro-Regular";
+}

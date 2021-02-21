@@ -1,0 +1,48 @@
+.register__container{
+    display: flex;
+}
+
+.register__rightSide{
+    background-color: rgb(226, 226, 226);
+    width: 50%;
+    height: 100vh;
+}
+
+.register__leftSide{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1599382103240-5f2a57137d28?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2hhdHNhcHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.register__texts{
+    margin-bottom: 0.5rem;
+}
+
+.register__form{
+    position: absolute;
+    top:50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
+.register__input{
+    padding: 9px;
+    width: 15rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.register__btn{
+    border: none;
+    padding: 9px;
+    width: 15rem;
+    border-radius: 5px;
+    outline-style: none;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,62 @@
+.register__rightSide{
+    background-image:linear-gradient(rgba(12, 81, 209, 0.39), rgba(12, 81, 209, 0.39)), url("https://images.unsplash.com/photo-1610641564155-8ea9845579dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.register__container{
+    display: flex;
+}
+
+.register__leftSide{
+    background-color: rgba(9, 57, 145, 0.39);
+    width: 50%;
+}
+
+.register__form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%,-50%);
+}
+
+.register__input{
+    padding: 10px;
+    width: 330px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.headerTexts{
+text-align: left;
+}
+
+.register__login{
+    margin-bottom: 0.5rem;
+}
+
+.register__link{
+    text-decoration: none;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.register__p{
+    margin: 0.5rem 0rem;
+}
+
+.register__btn{
+    padding: 10px;
+    width: 120px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline-style: none;
+    background: blue;
+    color: white;
+    font-size: bold;
+}
+

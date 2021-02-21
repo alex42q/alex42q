@@ -1,0 +1,90 @@
+.profile__nav{
+    background-color: black;
+    padding: 1rem 1rem;
+}
+
+.profile__li{
+    list-style: none;
+}
+
+.profile__link{
+    text-decoration: none;
+    color: white;
+}
+
+.profile__navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__navH2{
+    color: white;
+}
+
+.profile__navH5{
+    color: white;
+    margin-right: 1rem;
+}
+
+.profile__navRightSide{
+    display: flex;
+    align-items: center;
+}
+
+.profile__navIcon{
+    color: white;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.profile__navList{
+    display: none;
+}
+
+.profile__navListAfter{
+    display: flex;
+}
+
+.profile__container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__form,.profile__passForm,.profile__flForm{
+    box-shadow: 3px 3px 3px 3px;
+    margin: 3rem;
+    width: 30%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile__topFormTexts{
+    margin-bottom: 1rem;
+}
+
+.profile__email{
+    margin-bottom: 0.5rem;
+}
+
+.profile__button{
+    margin-top: 1rem;
+}
+
+.profile__btn{
+    padding: 10px;
+    border: none;
+    width: 10rem;
+    color: white;
+    background-color: blue;
+    outline-style: none;
+}
+
+.profile__input{
+    padding: 10px;
+    width: 330px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}

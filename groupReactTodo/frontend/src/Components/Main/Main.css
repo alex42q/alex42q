@@ -1,0 +1,27 @@
+.main__container{
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main__icon{
+    color: white;
+    position: absolute;
+}
+
+.main__form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__input{
+    padding: 5px;
+    width: 15rem;
+}
+
+.showTodos{
+    display: flex;
+    flex-direction: column;
+}
